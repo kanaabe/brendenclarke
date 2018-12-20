@@ -1,7 +1,7 @@
 ## Gatsby / Netlify CMS Starter
 
 1. Clone this repo
-2. `npm install`, `gatsby develop` to see your site
+2. `yarn install`, `gatsby develop` to see your site
 3. Update the admin config
 
 ```
