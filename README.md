@@ -1,12 +1,15 @@
-# gatsby-starter-hello-world
-Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site.
+## Gatsby / Netlify CMS Starter
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
+1. Clone this repo
+2. `npm install`, `gatsby develop` to see your site
+3. Update the admin config
+
 ```
-gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
+backend:
+  name: github
+  repo: your-name/your-repo
 ```
 
-Or [view the live demo here](https://gatsby-starter-hello-world-demo.netlify.com/).
-
-## Running in development
-`gatsby develop`
+4. Push the repo up to Github
+5. Create a site on Netlify (https://app.netlify.com/start)
+6. Follow steps to use Github as an oAuth provider (https://www.netlify.com/docs/authentication-providers/#using-an-authentication-provider)
