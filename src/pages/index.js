@@ -1,12 +1,16 @@
 import React from "react"
-import { Helmet } from "react-helmet"
-import styled from "styled-components"
+import { Head } from "../components/Head"
+import { Body, Nav, NavLinks } from "../components/LayoutPrimitives"
 
 const Home = () => {
   return (
     <div>
       <Head />
       <Body>
+        <Nav>
+          <NavLinks>Photography</NavLinks>
+          <NavLinks>Video</NavLinks>
+        </Nav>
         <h1>Hello World!</h1>
         <h2>This is the homepage</h2>
       </Body>
@@ -14,18 +18,4 @@ const Home = () => {
   )
 }
 
-const Head = () => {
-  return (
-    <Helmet>
-      <meta charSet="utf-8" />
-      <title>Gatsby Netlify Simple Starter</title>
-      <link rel="canonical" href="http://mysite.com/example" />
-    </Helmet>
-  )
-}
-
-const Body = styled.div`
-  max-width: 1250px;
-  margin: auto;
-`
 export default Home
