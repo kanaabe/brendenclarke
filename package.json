@@ -12,10 +12,12 @@
     "babel-plugin-styled-components": "^1.10.0",
     "gatsby": "^2.0.33",
     "gatsby-plugin-netlify-cms": "^3.0.9",
+    "gatsby-plugin-react-helmet": "^3.0.4",
     "gatsby-plugin-styled-components": "^3.0.4",
     "netlify-cms": "^2.3.1",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
+    "react-helmet": "^5.2.0",
     "styled-components": "^4.1.3"
   }
 }
