@@ -1,7 +1,18 @@
 import React from "react"
+import { graphql } from "gatsby"
 
-const Category = () => {
-  return <div>Testing...</div>
+export default ({ data }) => {
+  const title = data.markdownRemark.frontmatter.title
+  return <div>{title}</div>
 }
 
-export default Category
+export const query = graphql`
+  query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      frontmatter {
+        title
+      }
+    }
+  }
+`
