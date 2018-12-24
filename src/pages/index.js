@@ -1,11 +1,10 @@
 import React from "react"
-import { Head } from "../components/Head"
+import { LayoutWrapper } from "../components/LayoutWrapper"
 import { Body, Nav, NavLinks } from "../components/LayoutPrimitives"
 
 const Home = () => {
   return (
-    <div>
-      <Head />
+    <LayoutWrapper>
       <Body>
         <Nav>
           <NavLinks>Photography</NavLinks>
@@ -14,7 +13,7 @@ const Home = () => {
         <h1>Hello World!</h1>
         <h2>This is the homepage</h2>
       </Body>
-    </div>
+    </LayoutWrapper>
   )
 }
 

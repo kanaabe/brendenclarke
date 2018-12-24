@@ -8,7 +8,7 @@ public_folder: assets
 collections:
   - name: category
     label: Category
-    folder: category
+    folder: src/pages/category
     create: true
     fields:
       - { name: slug, label: Slug }
