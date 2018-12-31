@@ -1,9 +1,9 @@
 ---
 slug: photography
-title: Photography!
+title: Photography
 mediaList:
-  - caption: This is a really important image to me.
-    media: /assets/kitten.jpg
-    title: Nighttime
+  - caption: 12/15/2015
+    media: /assets/commuters-crowd-indoors-1047330.jpg
+    title: Commuters
 ---
 
