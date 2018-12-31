@@ -1,6 +1,7 @@
 import React from "react"
 import Helmet from "react-helmet"
 import { StaticQuery, graphql } from "gatsby"
+import { createGlobalStyle } from "styled-components"
 
 const LayoutWrapper = ({ children }) => (
   <StaticQuery
@@ -15,7 +16,7 @@ const LayoutWrapper = ({ children }) => (
       }
     `}
     render={data => (
-      <div>
+      <React.Fragment>
         <Helmet>
           <html lang="en" />
           <meta charSet="utf-8" />
@@ -29,10 +30,23 @@ const LayoutWrapper = ({ children }) => (
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
-        <div>{children}</div>
-      </div>
+        <div>
+          <GlobalStyle />
+          {children}
+        </div>
+      </React.Fragment>
     )}
   />
 )
+
+const GlobalStyle = createGlobalStyle`
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+  }
+`
 
 export { LayoutWrapper }

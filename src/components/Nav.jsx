@@ -40,6 +40,9 @@ const StyledNav = styled.div`
 
 const NavLink = styled.a`
   margin-right: 20px;
+  color: black;
+  text-decoration: none;
+  padding: 20px 0;
 `
 
 export { Nav }

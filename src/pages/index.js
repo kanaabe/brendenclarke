@@ -8,8 +8,7 @@ const Home = () => {
     <LayoutWrapper>
       <Body>
         <Nav />
-        <h1>Hello World!</h1>
-        <h2>This is the homepage</h2>
+        <h1>Pablo Picasso</h1>
       </Body>
     </LayoutWrapper>
   )
