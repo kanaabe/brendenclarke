@@ -2,6 +2,7 @@ import React from "react"
 import Helmet from "react-helmet"
 import { StaticQuery, graphql } from "gatsby"
 import { createGlobalStyle } from "styled-components"
+import "normalize.css"
 
 const LayoutWrapper = ({ children }) => (
   <StaticQuery
@@ -22,6 +23,11 @@ const LayoutWrapper = ({ children }) => (
           <meta charSet="utf-8" />
           <title>{data.site.siteMetadata.title}</title>
           <link rel="canonical" href="https://mysite.com/example" />
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+            type="text/css"
+          />
           <meta
             name="description"
             content={data.site.siteMetadata.description}
@@ -30,10 +36,8 @@ const LayoutWrapper = ({ children }) => (
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
-        <div>
-          <GlobalStyle />
-          {children}
-        </div>
+        <GlobalStyle />
+        {children}
       </React.Fragment>
     )}
   />
@@ -42,10 +46,6 @@ const LayoutWrapper = ({ children }) => (
 const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
-  }
-
-  body {
-    margin: 0;
   }
 `
 

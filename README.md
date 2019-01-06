@@ -7,6 +7,7 @@ This simple starter is inspired by Netlify's [Gatsby + Netlify CMS Starter](http
 - Gatsby
 - Netlify for CMS
 - Styled Components
+- React Flexbox Grid
 - React Helmet
 - Gatsby Image (coming soon)
 

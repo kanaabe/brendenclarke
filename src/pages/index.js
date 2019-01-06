@@ -8,7 +8,6 @@ const Home = () => {
     <LayoutWrapper>
       <Body>
         <Nav />
-        <h1>Pablo Picasso</h1>
       </Body>
     </LayoutWrapper>
   )

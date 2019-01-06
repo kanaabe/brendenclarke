@@ -6,6 +6,11 @@ const Nav = () => (
   <StaticQuery
     query={graphql`
       {
+        site {
+          siteMetadata {
+            authorName
+          }
+        }
         allMarkdownRemark {
           edges {
             node {
@@ -22,6 +27,7 @@ const Nav = () => (
     `}
     render={data => (
       <StyledNav>
+        <AuthorName href="/">{data.site.siteMetadata.authorName}</AuthorName>
         {data.allMarkdownRemark.edges.map(edge => (
           <NavLink key={edge.node.fields.slug} href={edge.node.fields.slug}>
             {edge.node.frontmatter.title}
@@ -33,17 +39,24 @@ const Nav = () => (
 )
 
 const StyledNav = styled.div`
-  width: 100%;
   margin: 20px;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  min-width: 150px;
 `
 
 const NavLink = styled.a`
-  margin-right: 20px;
   color: black;
   text-decoration: none;
-  padding: 20px 0;
+  padding-top: 20px;
+  width: 100%;
+`
+
+const AuthorName = styled.a`
+  font-size: 25px;
+  width: 100%;
+  text-decoration: none;
 `
 
 export { Nav }
