@@ -27,7 +27,7 @@ const Nav = () => (
     `}
     render={data => (
       <StyledNav>
-        <AuthorName href="/">{data.site.siteMetadata.authorName}</AuthorName>
+        <NavLink href="/">{data.site.siteMetadata.authorName}</NavLink>
         {data.allMarkdownRemark.edges.map(edge => (
           <NavLink key={edge.node.fields.slug} href={edge.node.fields.slug}>
             {edge.node.frontmatter.title}
@@ -39,24 +39,20 @@ const Nav = () => (
 )
 
 const StyledNav = styled.div`
-  margin: 20px;
   display: flex;
+  position: fixed;
   align-items: center;
-  flex-direction: column;
-  min-width: 150px;
+  justify-content: space-between;
+  width: 100vw;
+  top: 0;
+  background-color: transparent;
 `
 
 const NavLink = styled.a`
-  color: black;
+  color: red;
   text-decoration: none;
-  padding-top: 20px;
-  width: 100%;
-`
-
-const AuthorName = styled.a`
-  font-size: 25px;
-  width: 100%;
-  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
 `
 
 export { Nav }

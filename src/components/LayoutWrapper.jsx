@@ -22,11 +22,15 @@ const LayoutWrapper = ({ children }) => (
           <html lang="en" />
           <meta charSet="utf-8" />
           <title>{data.site.siteMetadata.title}</title>
-          <link rel="canonical" href="https://mysite.com/example" />
+          <link rel="canonical" href={data.site.siteMetadata.url} />
           <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
             type="text/css"
+          />
+          <link
+            href="https://fonts.googleapis.com/css?family=Arimo"
+            rel="stylesheet"
           />
           <meta
             name="description"
@@ -46,6 +50,12 @@ const LayoutWrapper = ({ children }) => (
 const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+  }
+
+  body {
+    margin: 0;
+    overflow: hidden;
   }
 `
 
