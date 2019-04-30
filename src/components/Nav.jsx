@@ -49,10 +49,10 @@ const StyledNav = styled.div`
 `
 
 const NavLink = styled.a`
-  color: red;
+  color: black;
   text-decoration: none;
-  text-transform: uppercase;
   font-size: 20px;
+  padding: 15px;
 `
 
 export { Nav }

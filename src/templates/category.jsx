@@ -18,7 +18,6 @@ export default ({ data }) => {
                 <Image alt={media.title} src={media.media} />
               </ImageContainer>
               <Caption>
-                <CaptionTitle>{media.title}</CaptionTitle>
                 <CaptionContent>{media.caption}</CaptionContent>
               </Caption>
             </React.Fragment>
@@ -50,11 +49,13 @@ const Work = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
+  overflow: scroll;
 `
 
 const ImageContainer = styled.div`
+  margin: auto;
   width: 100%;
-  height: 90%;
+  height: 80%;
   z-index: -1;
 `
 
@@ -65,13 +66,9 @@ const Image = styled.img`
 `
 
 const Caption = styled.div`
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  height: 10%;
-`
-
-const CaptionTitle = styled.h3`
-  margin: 0 20px 0 0;
-  text-align: right;
 `
 
 const CaptionContent = styled.p`
