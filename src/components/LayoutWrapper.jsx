@@ -29,7 +29,7 @@ const LayoutWrapper = ({ children }) => (
             type="text/css"
           />
           <link
-            href="https://fonts.googleapis.com/css?family=Arimo"
+            href="https://fonts.googleapis.com/css?family=Arimo|Ubuntu+Mono"
             rel="stylesheet"
           />
           <meta
@@ -50,7 +50,6 @@ const LayoutWrapper = ({ children }) => (
 const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
-    font-family: 'Arimo', sans-serif;
   }
 
   body {

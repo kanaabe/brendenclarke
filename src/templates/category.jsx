@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 import { Nav } from "../components/Nav"
-import { Body } from "../components/LayoutPrimitives"
+import { Body, Text } from "../components/LayoutPrimitives"
 import { LayoutWrapper } from "../components/LayoutWrapper"
 
 export default ({ data }) => {
@@ -11,20 +11,18 @@ export default ({ data }) => {
     <LayoutWrapper>
       <Body>
         <Nav />
-        <WorkOuter>
-          <Work>
+        <WorkViewport>
+          <WorkTrack numberOfWorks={mediaList.length}>
             {mediaList.map(media => (
-              <MediaContainer>
-                <ImageContainer>
-                  <Image alt={media.title} src={media.media} />
-                </ImageContainer>
-                <Caption>
-                  <CaptionContent>{media.caption}</CaptionContent>
-                </Caption>
-              </MediaContainer>
+              <ImageContainer>
+                <Image alt={media.title} src={media.media} />
+                <Text mono size="14px">
+                  {media.caption}
+                </Text>
+              </ImageContainer>
             ))}
-          </Work>
-        </WorkOuter>
+          </WorkTrack>
+        </WorkViewport>
       </Body>
     </LayoutWrapper>
   )
@@ -47,29 +45,30 @@ export const query = graphql`
 `
 
 const MediaContainer = styled.div`
-  // width: 100vw;
   height: 100%;
   display: flex;
   flex-direction: column;
 `
 
-const WorkOuter = styled.div`
+const WorkViewport = styled.div`
+  display: inline-grid;
   width: 100vw;
   height: 100vh;
   overflow: scroll;
 `
 
-const Work = styled.div`
-  height: 100%;
+const WorkTrack = styled.div`
   display: flex;
-  justify-content: flex-start;
+  width: calc(70vw * ${props => props.numberOfWorks});
+  height: 70vh;
+  margin: auto;
 `
 
 const ImageContainer = styled.div`
-  margin: auto;
+  display: inline-block;
   width: 100%;
-  height: 80%;
-  z-index: -1;
+  height: 100%;
+  padding: 0 30px;
 `
 
 const Image = styled.img`
@@ -78,15 +77,11 @@ const Image = styled.img`
   object-fit: contain;
 `
 
-const Caption = styled.div`
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-`
-
 const CaptionContent = styled.p`
+  font-family: Consolas;
+  width: 100%;
   margin: 0 20px 0 0;
-  text-align: right;
+  text-align: center;
 `
 
 // @keyframes ticker {

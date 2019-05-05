@@ -49,10 +49,20 @@ const StyledNav = styled.div`
 `
 
 const NavLink = styled.a`
+  font-family: Arimo, sans-serif;
   color: black;
   text-decoration: none;
   font-size: 20px;
+  letter-spacing: 3px;
   padding: 15px;
+  font-weight: bold;
+  &:hover {
+    color: red;
+  }
+
+  @media only screen and (max-width: 500px) {
+    font-size: 12px;
+  }
 `
 
 export { Nav }

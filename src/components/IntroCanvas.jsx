@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Engine, Render, World, Bodies } from "matter-js"
+import { Engine, MouseConstraint, Render, World, Bodies } from "matter-js"
 
 class IntroCanvas extends React.Component {
   componentDidMount() {
@@ -50,6 +50,16 @@ class IntroCanvas extends React.Component {
       ground.width = wWidth
     })
 
+    var mouseConstraint = MouseConstraint.create(engine, {
+      element: canvas,
+      constraint: {
+        render: {
+          visible: false
+        },
+        stiffness: 0.8
+      }
+    })
+
     // add all of the bodies to the world
     World.add(engine.world, [
       box(5),
@@ -64,7 +74,8 @@ class IntroCanvas extends React.Component {
       box(10),
       ground,
       wallLeft,
-      wallRight
+      wallRight,
+      mouseConstraint
     ])
 
     // run the engine
