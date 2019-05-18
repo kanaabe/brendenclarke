@@ -30,7 +30,12 @@ class IntroCanvas extends React.Component {
         wWidth / 2,
         wHeight * -1 * Math.random(),
         wWidth * size * 0.01,
-        wHeight * size * 0.01
+        // wHeight * size * 0.01,
+        {
+          render: {
+            fillStyle: "black"
+          }
+        }
       )
     }
 
