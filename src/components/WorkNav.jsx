@@ -52,7 +52,7 @@ const StyledNav = styled.div`
 `
 
 const NavLink = styled(Link)`
-  font-family: Arimo, sans-serif;
+  font-family: Cutive Mono, sans-serif;
   color: ${props => (props.isActive ? "red" : "black")};
   text-decoration: none;
   font-size: 14px;

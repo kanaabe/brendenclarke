@@ -8,7 +8,7 @@ const Body = styled.div`
 
 const Text = styled.div`
   font-family: ${props =>
-    props.mono ? "Ubuntu Mono, sans-serif" : "Arimo, sans-serif"};
+    props.mono ? "Cutive Mono, sans-serif" : "Rubik, sans-serif"};
   font-size: ${props => props.size || "24px"};
 `
 

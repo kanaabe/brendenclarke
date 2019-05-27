@@ -4,6 +4,7 @@ import styled from "styled-components"
 import { Nav } from "../components/Nav"
 import { Body, Text } from "../components/LayoutPrimitives"
 import { LayoutWrapper } from "../components/LayoutWrapper"
+import { MarkdownContent } from "../components/MarkdownContent"
 
 export default ({ data, location }) => {
   const { image, mainCopy, subCopy } = data.markdownRemark.frontmatter
@@ -15,10 +16,11 @@ export default ({ data, location }) => {
           <Image image={image} />
           <TextContainer>
             <Text mono size="16px">
-              {mainCopy}
+              <MarkdownContent content={mainCopy} />
             </Text>
+            <Spacer />
             <Text mono size="14px">
-              {subCopy}
+              <MarkdownContent content={subCopy} />
             </Text>
           </TextContainer>
         </Container>
@@ -40,10 +42,13 @@ export const query = graphql`
     }
   }
 `
+const Spacer = styled.div`
+  height: 40px;
+`
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   height: 100%;
   width: 50%;
   padding: 20px;
