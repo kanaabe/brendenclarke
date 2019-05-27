@@ -4,11 +4,11 @@ import { Body } from "../components/LayoutPrimitives"
 import { Nav } from "../components/Nav"
 import { IntroCanvas } from "../components/IntroCanvas"
 
-const Home = () => {
+const Home = ({ location }) => {
   return (
     <LayoutWrapper>
       <Body>
-        <Nav />
+        <Nav location={location} />
         <IntroCanvas />
       </Body>
     </LayoutWrapper>

@@ -26,20 +26,15 @@ class IntroCanvas extends React.Component {
 
     // create two boxes and a ground
     const box = size => {
-      return Bodies.circle(
+      return Bodies.rectangle(
         wWidth / 2,
         wHeight * -1 * Math.random(),
         wWidth * size * 0.01,
-        // wHeight * size * 0.01,
-        {
-          render: {
-            fillStyle: "black"
-          }
-        }
+        wHeight * size * 0.01
       )
     }
 
-    const ground = Bodies.rectangle(wWidth / 2, wHeight, wWidth, 1, {
+    const ground = Bodies.rectangle(wWidth / 2, wHeight - 100, wWidth, 1, {
       isStatic: true
     })
     const wallLeft = Bodies.rectangle(0, wHeight, 1, wHeight * 2, {

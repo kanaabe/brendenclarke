@@ -10,4 +10,5 @@ mediaList:
       this.
     media: /assets/animals-avian-beach-760984.jpg
     title: Waves
+templateKey: work
 ---

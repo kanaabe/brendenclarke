@@ -6,10 +6,29 @@ media_folder: static/assets
 public_folder: assets
 
 collections:
-  - name: category
-    label: Category
-    folder: src/pages/category
+  - name: page
+    label: Page
+    folder: src/pages/page
+    editor:
+      preview: false
+    fields:
+      - { name: slug, label: Slug }
+      - { name: title, label: Title }
+      - { name: image, label: Image, widget: image }
+      - { name: mainCopy, label: Main Copy, widget: markdown }
+      - { name: subCopy, label: Sub Copy, widget: markdown }
+      - {
+          label: Template Key,
+          name: templateKey,
+          widget: hidden,
+          default: page,
+        }
+  - name: work
+    label: Work
+    folder: src/pages/work
     create: true
+    editor:
+      preview: false
     fields:
       - { name: slug, label: Slug }
       - { name: title, label: Title }
@@ -20,3 +39,9 @@ collections:
           - { name: title, label: Title }
           - { name: caption, label: Caption, widget: markdown }
           - { name: media, label: Media, widget: file }
+      - {
+          label: Template Key,
+          name: templateKey,
+          widget: hidden,
+          default: work,
+        }

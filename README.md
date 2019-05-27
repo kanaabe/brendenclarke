@@ -1,6 +1,6 @@
 ## Gatsby / Netlify CMS Starter
 
-This simple starter is inspired by Netlify's [Gatsby + Netlify CMS Starter](https://github.com/netlify-templates/gatsby-starter-netlify-cms). Instead of a blog-style site, this starter is focused on an artist's portfolio. The only modelling provided is a "Category" with the ability to upload media. The rest is up to you!
+This simple starter is inspired by Netlify's [Gatsby + Netlify CMS Starter](https://github.com/netlify-templates/gatsby-starter-netlify-cms). Instead of a blog-style site, this starter is focused on an artist's portfolio. The only modelling provided is a "Work" with the ability to upload media. The rest is up to you!
 
 ## Features
 

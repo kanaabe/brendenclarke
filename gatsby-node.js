@@ -17,6 +17,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
+
   return new Promise((resolve, reject) => {
     graphql(`
       {
@@ -26,6 +27,9 @@ exports.createPages = ({ graphql, actions }) => {
               fields {
                 slug
               }
+              frontmatter {
+                templateKey
+              }
             }
           }
         }
@@ -34,7 +38,9 @@ exports.createPages = ({ graphql, actions }) => {
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
           path: node.fields.slug,
-          component: path.resolve(`./src/templates/category.jsx`),
+          component: path.resolve(
+            `./src/templates/${String(node.frontmatter.templateKey)}.jsx`
+          ),
           context: {
             // Data passed to context is available
             // in page queries as GraphQL variables.
@@ -42,6 +48,19 @@ exports.createPages = ({ graphql, actions }) => {
           }
         })
       })
+
+      // Create the /work page
+      const firstWork = result.data.allMarkdownRemark.edges.filter(
+        page => page.node.frontmatter.templateKey === "work"
+      )[0]
+      if (firstWork) {
+        createPage({
+          path: "work",
+          component: path.resolve("./src/templates/work.jsx"),
+          context: { slug: firstWork.node.fields.slug }
+        })
+      }
+
       resolve()
     })
   })

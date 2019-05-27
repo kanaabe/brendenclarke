@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "styled-components"
-import { StaticQuery, graphql } from "gatsby"
+import { Link, StaticQuery, graphql } from "gatsby"
 
-const Nav = () => (
+const Nav = ({ location }) => (
   <StaticQuery
     query={graphql`
       {
@@ -11,28 +11,19 @@ const Nav = () => (
             authorName
           }
         }
-        allMarkdownRemark {
-          edges {
-            node {
-              frontmatter {
-                title
-              }
-              fields {
-                slug
-              }
-            }
-          }
-        }
       }
     `}
     render={data => (
       <StyledNav>
-        <NavLink href="/">{data.site.siteMetadata.authorName}</NavLink>
-        {data.allMarkdownRemark.edges.map(edge => (
-          <NavLink key={edge.node.fields.slug} href={edge.node.fields.slug}>
-            {edge.node.frontmatter.title}
-          </NavLink>
-        ))}
+        <NavLink to="/" isActive={location.pathname === "/"}>
+          {data.site.siteMetadata.authorName}
+        </NavLink>
+        <NavLink to="/work" isActive={location.pathname.indexOf("work") > -1}>
+          Work
+        </NavLink>
+        <NavLink to="/page/about" isActive={location.pathname === "about"}>
+          About
+        </NavLink>
       </StyledNav>
     )}
   />
@@ -46,16 +37,18 @@ const StyledNav = styled.div`
   width: 100vw;
   top: 0;
   background-color: transparent;
+  z-index: 1000;
 `
 
-const NavLink = styled.a`
+const NavLink = styled(Link)`
   font-family: Arimo, sans-serif;
-  color: black;
+  color: ${props => (props.isActive ? "red" : "black")};
   text-decoration: none;
   font-size: 20px;
   letter-spacing: 3px;
   padding: 15px;
   font-weight: bold;
+  cursor: pointer;
   &:hover {
     color: red;
   }

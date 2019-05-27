@@ -2,23 +2,22 @@ import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 import { Nav } from "../components/Nav"
-import { Body, Text } from "../components/LayoutPrimitives"
+import { WorkNav } from "../components/WorkNav"
+import { Body } from "../components/LayoutPrimitives"
 import { LayoutWrapper } from "../components/LayoutWrapper"
 
-export default ({ data }) => {
+export default ({ data, location }) => {
   const { mediaList } = data.markdownRemark.frontmatter
   return (
     <LayoutWrapper>
       <Body>
-        <Nav />
+        <Nav location={location} />
+        <WorkNav location={location} />
         <WorkViewport>
           <WorkTrack numberOfWorks={mediaList.length}>
             {mediaList.map(media => (
-              <ImageContainer>
+              <ImageContainer key={media.title}>
                 <Image alt={media.title} src={media.media} />
-                <Text mono size="14px">
-                  {media.caption}
-                </Text>
               </ImageContainer>
             ))}
           </WorkTrack>
@@ -42,12 +41,6 @@ export const query = graphql`
       }
     }
   }
-`
-
-const MediaContainer = styled.div`
-  height: 100%;
-  display: flex;
-  flex-direction: column;
 `
 
 const WorkViewport = styled.div`
@@ -76,40 +69,3 @@ const Image = styled.img`
   height: 100%;
   object-fit: contain;
 `
-
-const CaptionContent = styled.p`
-  font-family: Consolas;
-  width: 100%;
-  margin: 0 20px 0 0;
-  text-align: center;
-`
-
-// @keyframes ticker {
-//   0% { transform: translate3d(0, 0, 0); }
-//   100% { transform: translate3d(-100%, 0, 0); }
-// }
-// .tcontainer{
-//   width: 100%;
-//   overflow: hidden;
-// }
-// .ticker-wrap {
-//   width: 100%;
-//   padding-left: 100%;
-//   background-color: #eee;
-// }
-// .ticker-move {
-//   display: inline-block;
-//   white-space: nowrap;
-//   padding-right: 100%;
-//   animation-iteration-count: infinite;
-//   animation-timing-function: linear;
-//   animation-name: ticker;
-//   animation-duration: 10s;
-// }
-// .ticker-move:hover{
-//   animation-play-state: paused;
-// }
-// .ticker-item{
-//   display: inline-block;
-//   padding: 0 2rem;
-// }

@@ -1,0 +1,65 @@
+import React from "react"
+import { graphql } from "gatsby"
+import styled from "styled-components"
+import { Nav } from "../components/Nav"
+import { Body, Text } from "../components/LayoutPrimitives"
+import { LayoutWrapper } from "../components/LayoutWrapper"
+
+export default ({ data, location }) => {
+  const { image, mainCopy, subCopy } = data.markdownRemark.frontmatter
+  return (
+    <LayoutWrapper>
+      <Body>
+        <Nav location={location} />
+        <Container>
+          <Image image={image} />
+          <TextContainer>
+            <Text mono size="16px">
+              {mainCopy}
+            </Text>
+            <Text mono size="14px">
+              {subCopy}
+            </Text>
+          </TextContainer>
+        </Container>
+      </Body>
+    </LayoutWrapper>
+  )
+}
+
+export const query = graphql`
+  query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      frontmatter {
+        title
+        image
+        mainCopy
+        subCopy
+      }
+    }
+  }
+`
+const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  width: 50%;
+  padding: 20px;
+`
+
+const Container = styled.div`
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding-top: 53px;
+`
+
+const Image = styled.div`
+  width: 50%;
+  height: 100%;
+  background-image: url(${props => props.image});
+  background-size: cover;
+  background-position: center;
+`
