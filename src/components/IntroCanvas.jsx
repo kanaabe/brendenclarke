@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Engine, MouseConstraint, Render, World, Bodies } from "matter-js"
+import img from "../../static/assets/background.jpg"
 
 class IntroCanvas extends React.Component {
   componentDidMount() {
@@ -24,12 +25,21 @@ class IntroCanvas extends React.Component {
       }
     })
 
-    const box = size => {
-      return Bodies.circle(
-        wWidth / 2,
-        wHeight * -1 * Math.random(),
-        wWidth * size * 0.01,
-        wHeight * size * 0.01
+    const box = ({ pX, pY, w, h, texture, xScale, yScale }) => {
+      return Bodies.rectangle(
+        wWidth * pX,
+        wHeight * pY,
+        wWidth * w,
+        wHeight * h,
+        {
+          render: {
+            sprite: {
+              texture,
+              xScale,
+              yScale
+            }
+          }
+        }
       )
     }
 
@@ -61,16 +71,51 @@ class IntroCanvas extends React.Component {
 
     // add all of the bodies to the world
     World.add(engine.world, [
-      box(20),
-      box(20),
-      box(15),
-      box(14),
-      box(13),
-      box(13),
-      // box(90),
-      // box(10),
-      // box(90),
-      // box(10),
+      box({
+        pX: 0.3,
+        pY: -1,
+        w: 0.1,
+        h: 0.1,
+        texture: img,
+        xScale: 0.05,
+        yScale: 0.05
+      }),
+      box({
+        pX: 0.4,
+        pY: -1,
+        w: 0.1,
+        h: 0.1,
+        texture: img,
+        xScale: 0.05,
+        yScale: 0.05
+      }),
+      box({
+        pX: 0.5,
+        pY: -1,
+        w: 0.1,
+        h: 0.1,
+        texture: img,
+        xScale: 0.05,
+        yScale: 0.05
+      }),
+      box({
+        pX: 0.6,
+        pY: -1,
+        w: 0.1,
+        h: 0.1,
+        texture: img,
+        xScale: 0.05,
+        yScale: 0.05
+      }),
+      box({
+        pX: 0.7,
+        pY: -1,
+        w: 0.1,
+        h: 0.1,
+        texture: img,
+        xScale: 0.05,
+        yScale: 0.05
+      }),
       ground,
       wallLeft,
       wallRight,
