@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 import { Nav } from "../components/Nav"
-import { WorkNav } from "../components/WorkNav"
+// import { ProjectNav } from "../components/ProjectNav"
 import { Body } from "../components/LayoutPrimitives"
 import { LayoutWrapper } from "../components/LayoutWrapper"
 
@@ -12,16 +12,16 @@ export default ({ data, location }) => {
     <LayoutWrapper>
       <Body>
         <Nav location={location} />
-        <WorkNav location={location} />
-        <WorkViewport>
-          <WorkTrack numberOfWorks={mediaList.length}>
+        {/* <ProjectNav location={location} /> */}
+        <ProjectViewport>
+          <ProjectTrack numberOfWorks={mediaList.length}>
             {mediaList.map(media => (
               <ImageContainer key={media.title}>
                 <Image alt={media.title} src={media.media} />
               </ImageContainer>
             ))}
-          </WorkTrack>
-        </WorkViewport>
+          </ProjectTrack>
+        </ProjectViewport>
       </Body>
     </LayoutWrapper>
   )
@@ -43,14 +43,14 @@ export const query = graphql`
   }
 `
 
-const WorkViewport = styled.div`
+const ProjectViewport = styled.div`
   display: inline-grid;
   width: 100vw;
   height: 100vh;
   overflow: scroll;
 `
 
-const WorkTrack = styled.div`
+const ProjectTrack = styled.div`
   display: flex;
   width: calc(70vw * ${props => props.numberOfWorks});
   height: 70vh;

@@ -49,17 +49,17 @@ exports.createPages = ({ graphql, actions }) => {
         })
       })
 
-      // Create the /work page
-      const firstWork = result.data.allMarkdownRemark.edges.filter(
-        page => page.node.frontmatter.templateKey === "work"
-      )[0]
-      if (firstWork) {
-        createPage({
-          path: "work",
-          component: path.resolve("./src/templates/work.jsx"),
-          context: { slug: firstWork.node.fields.slug }
-        })
-      }
+      // // Create the /work page
+      // const firstWork = result.data.allMarkdownRemark.edges.filter(
+      //   page => page.node.frontmatter.templateKey === "work"
+      // )[0]
+      // if (firstWork) {
+      //   createPage({
+      //     path: "work",
+      //     component: path.resolve("./src/templates/work.jsx"),
+      //     context: { slug: firstWork.node.fields.slug }
+      //   })
+      // }
 
       resolve()
     })

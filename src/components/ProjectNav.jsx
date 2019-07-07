@@ -2,11 +2,13 @@ import React from "react"
 import styled from "styled-components"
 import { Link, StaticQuery, graphql } from "gatsby"
 
-const WorkNav = ({ location }) => (
+const ProjectNav = ({ location }) => (
   <StaticQuery
     query={graphql`
       {
-        allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/work/" } }) {
+        allMarkdownRemark(
+          filter: { fileAbsolutePath: { regex: "/project/" } }
+        ) {
           edges {
             node {
               id
@@ -22,16 +24,16 @@ const WorkNav = ({ location }) => (
     `}
     render={data => (
       <StyledNav>
-        {data.allMarkdownRemark.edges.map(work => {
-          const href = `/work/${work.node.frontmatter.slug}`
+        {data.allMarkdownRemark.edges.map(project => {
+          const href = `/project/${project.node.frontmatter.slug}`
 
           return (
             <NavLink
               isActive={location.pathname.indexOf(href) > -1}
-              key={work.node.frontmatter.slug}
+              key={project.node.frontmatter.slug}
               to={href}
             >
-              {work.node.frontmatter.title}
+              {project.node.frontmatter.title}
             </NavLink>
           )
         })}
@@ -68,4 +70,4 @@ const NavLink = styled(Link)`
   }
 `
 
-export { WorkNav }
+export { ProjectNav }

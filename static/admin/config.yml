@@ -23,15 +23,19 @@ collections:
           widget: hidden,
           default: page,
         }
-  - name: work
-    label: Work
-    folder: src/pages/work
+  - name: project
+    label: Project
+    folder: src/pages/project
     create: true
     editor:
       preview: false
     fields:
       - { name: slug, label: Slug }
       - { name: title, label: Title }
+      - { name: thumbnailImage, label: Thumbnail Image, widget: media }
+      - name: category
+        widget: select
+        label: Category
       - name: mediaList
         label: "Media List"
         widget: list
@@ -43,5 +47,5 @@ collections:
           label: Template Key,
           name: templateKey,
           widget: hidden,
-          default: work,
+          default: project,
         }

@@ -18,8 +18,14 @@ const Nav = ({ location }) => (
         <NavLink to="/" isActive={location.pathname === "/"}>
           {data.site.siteMetadata.authorName}
         </NavLink>
-        <NavLink to="/work" isActive={location.pathname.indexOf("work") > -1}>
-          Work
+        <NavLink
+          to="/photography"
+          isActive={location.pathname.indexOf("photography") > -1}
+        >
+          Photography
+        </NavLink>
+        <NavLink to="/film" isActive={location.pathname.indexOf("film") > -1}>
+          Film
         </NavLink>
         <NavLink to="/page/about" isActive={location.pathname === "about"}>
           About
