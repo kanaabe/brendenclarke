@@ -52,6 +52,10 @@ const TextContainer = styled.div`
   height: 100%;
   width: 50%;
   padding: 20px;
+
+  @media only screen and (max-width: 500px) {
+    width: 100%;
+  }
 `
 
 const Container = styled.div`
@@ -59,6 +63,11 @@ const Container = styled.div`
   width: 100%;
   height: 100%;
   padding-top: 53px;
+
+  @media only screen and (max-width: 500px) {
+    display: block;
+    padding-top: 93px;
+  }
 `
 
 const Image = styled.div`
@@ -67,4 +76,10 @@ const Image = styled.div`
   background-image: url(${props => props.image});
   background-size: cover;
   background-position: center;
+
+  @media only screen and (max-width: 500px) {
+    width: 100%;
+    height: 50vw;
+    margin-bottom: 50px;
+  }
 `

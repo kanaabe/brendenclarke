@@ -24,9 +24,8 @@ class IntroCanvas extends React.Component {
       }
     })
 
-    // create two boxes and a ground
     const box = size => {
-      return Bodies.rectangle(
+      return Bodies.circle(
         wWidth / 2,
         wHeight * -1 * Math.random(),
         wWidth * size * 0.01,
@@ -62,16 +61,16 @@ class IntroCanvas extends React.Component {
 
     // add all of the bodies to the world
     World.add(engine.world, [
-      box(5),
-      box(5),
-      box(6),
-      box(6),
-      box(7),
-      box(8),
-      box(9),
-      box(10),
-      box(9),
-      box(10),
+      box(20),
+      box(20),
+      box(15),
+      box(14),
+      box(13),
+      box(13),
+      // box(90),
+      // box(10),
+      // box(90),
+      // box(10),
       ground,
       wallLeft,
       wallRight,

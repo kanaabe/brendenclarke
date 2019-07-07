@@ -55,6 +55,11 @@ const ProjectTrack = styled.div`
   width: calc(70vw * ${props => props.numberOfWorks});
   height: 70vh;
   margin: auto;
+
+  @media only screen and (max-width: 500px) {
+    width: 100%;
+    flex-direction: column;
+  }
 `
 
 const ImageContainer = styled.div`
@@ -62,6 +67,10 @@ const ImageContainer = styled.div`
   width: 100%;
   height: 100%;
   padding: 0 30px;
+
+  @media only screen and (max-width: 500px) {
+    padding: 0;
+  }
 `
 
 const Image = styled.img`

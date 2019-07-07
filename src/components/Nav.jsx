@@ -44,6 +44,11 @@ const StyledNav = styled.div`
   top: 0;
   background-color: transparent;
   z-index: 1000;
+
+  @media only screen and (max-width: 500px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `
 
 const NavLink = styled(Link)`
@@ -61,6 +66,7 @@ const NavLink = styled(Link)`
 
   @media only screen and (max-width: 500px) {
     font-size: 12px;
+    padding: 5px;
   }
 `
 

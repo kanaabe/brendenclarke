@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 
 const ProjectList = ({ projects }) => {
-  console.log(projects)
   return (
     <Body>
       {projects.map(project => (
@@ -21,7 +20,12 @@ const Body = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin-top: 53px;
+  margin: 53px auto;
+  max-width: 1250px;
+
+  @media only screen and (max-width: 500px) {
+    margin: 93px auto;
+  }
 `
 
 const ProjectBlock = styled.a`
