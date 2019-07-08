@@ -32,10 +32,11 @@ collections:
     fields:
       - { name: slug, label: Slug }
       - { name: title, label: Title }
-      - { name: thumbnailImage, label: Thumbnail Image, widget: media }
+      - { name: thumbnailImage, label: Thumbnail Image, widget: image }
       - name: category
         widget: select
         label: Category
+        options: ["photography", "film"]
       - name: mediaList
         label: "Media List"
         widget: list
