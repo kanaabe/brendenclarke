@@ -1,7 +1,7 @@
 ---
 slug: city
 title: City
-thumbnailImage: /assets/commuters-crowd-indoors-1047330.jpg
+thumbnailImage: /assets/p33.jpg
 category: photography
 mediaList:
   - caption: 12/15/2015
