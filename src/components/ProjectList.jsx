@@ -33,12 +33,12 @@ const ProjectBlock = styled.a`
   height: 100px;
   margin: 20px;
   background-image: url('${props => props.backgroundUrl}');
-  background-color: black;
+  background-color: lightgrey;
   background-size: cover;
   background-position: center;
 
   :hover {
-    border: 2px solid red;
+    filter: invert(1);
   }
 
   @media only screen and (max-width: 500px){
