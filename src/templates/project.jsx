@@ -2,17 +2,18 @@ import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 import { Nav } from "../components/Nav"
-// import { ProjectNav } from "../components/ProjectNav"
+import { ProjectNav } from "../components/ProjectNav"
 import { Body } from "../components/LayoutPrimitives"
 import { LayoutWrapper } from "../components/LayoutWrapper"
 
 export default ({ data, location }) => {
-  const { mediaList } = data.markdownRemark.frontmatter
+  const { category, mediaList } = data.markdownRemark.frontmatter
+  console.log(data)
   return (
     <LayoutWrapper>
       <Body>
         <Nav location={location} />
-        {/* <ProjectNav location={location} /> */}
+        <ProjectNav category={category} location={location} />
         <ProjectViewport>
           <ProjectTrack numberOfWorks={mediaList.length}>
             {mediaList.map(media => (
@@ -33,6 +34,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        category
         mediaList {
           media
           caption

@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link, StaticQuery, graphql } from "gatsby"
 
-const ProjectNav = ({ location }) => (
+const ProjectNav = ({ category, location }) => (
   <StaticQuery
     query={graphql`
       {
@@ -16,6 +16,7 @@ const ProjectNav = ({ location }) => (
               frontmatter {
                 title
                 slug
+                category
               }
             }
           }
@@ -25,6 +26,7 @@ const ProjectNav = ({ location }) => (
     render={data => (
       <StyledNav>
         {data.allMarkdownRemark.edges.map(project => {
+          if (project.node.frontmatter.category !== category) return
           const href = `/project/${project.node.frontmatter.slug}`
 
           return (
@@ -51,6 +53,10 @@ const StyledNav = styled.div`
   width: 300px;
   top: 0;
   left: 0;
+
+  @media only screen and (max-width: 500px) {
+    display: none;
+  }
 `
 
 const NavLink = styled(Link)`
