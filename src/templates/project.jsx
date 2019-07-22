@@ -8,7 +8,6 @@ import { LayoutWrapper } from "../components/LayoutWrapper"
 
 export default ({ data, location }) => {
   const { category, mediaList } = data.markdownRemark.frontmatter
-  console.log(data)
   return (
     <LayoutWrapper>
       <Body>
@@ -18,7 +17,16 @@ export default ({ data, location }) => {
           <ProjectTrack numberOfWorks={mediaList.length}>
             {mediaList.map(media => (
               <ImageContainer key={media.title}>
-                <Image alt={media.title} src={media.media} />
+                {media.video ? (
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    frameBorder={0}
+                    src={media.video}
+                  />
+                ) : (
+                  <Image alt={media.title} src={media.media} />
+                )}
               </ImageContainer>
             ))}
           </ProjectTrack>
@@ -39,6 +47,7 @@ export const query = graphql`
           media
           caption
           title
+          video
         }
       }
     }

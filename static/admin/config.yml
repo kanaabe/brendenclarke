@@ -44,7 +44,7 @@ collections:
           - { name: title, label: Title }
           - { name: caption, label: Caption, widget: markdown }
           - { name: media, label: Media, widget: file }
-          - { name: video, label: Video Link, widget: text }
+          - { name: video, label: Video Link }
       - {
           label: Template Key,
           name: templateKey,
