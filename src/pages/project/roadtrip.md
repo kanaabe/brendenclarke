@@ -1,12 +1,15 @@
 ---
-slug: roadtrip
-title: Road Trip
+slug: first-impressions
+title: First Impressions
+thumbnailImage: /assets/p17.jpg
 category: film
-thumbnailImage: /assets/commuters-crowd-indoors-1047330.jpg
 mediaList:
   - caption: 12/15/2015
-    media: /assets/commuters-crowd-indoors-1047330.jpg
+    media: ''
     title: Commuters
-    video: "https://www.youtube.com/embed/FoEpKtl4yqw"
+    video: 'https://www.youtube.com/embed/FoEpKtl4yqw'
+  - title: First Impressions
+    video: 'https://www.youtube.com/embed/NcGojSt06tI'
 templateKey: project
 ---
+
