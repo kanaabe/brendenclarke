@@ -71,12 +71,12 @@ class IntroCanvas extends React.Component {
         wWidth * h * 1.2,
         {
           restitution: 1,
-          frictionAir: 0.04,
+          frictionAir: 0.045,
           render: {
             sprite: {
               texture,
-              xScale: 0.17,
-              yScale: 0.17
+              xScale: wWidth * 0.00012,
+              yScale: wWidth * 0.00012
             }
           }
         }
@@ -119,7 +119,7 @@ class IntroCanvas extends React.Component {
       // ROW 1
       box({
         pX: 0.25,
-        pY: 4,
+        pY: 4.2,
         w: 0.116,
         h: 0.0317,
         texture: p1,
@@ -128,7 +128,7 @@ class IntroCanvas extends React.Component {
       }),
       box({
         pX: 0.35,
-        pY: 4,
+        pY: 4.2,
         w: 0.0773,
         h: 0.0317,
         texture: p2,
@@ -137,7 +137,7 @@ class IntroCanvas extends React.Component {
       }),
       box({
         pX: 0.45,
-        pY: 4,
+        pY: 4.2,
         w: 0.0773,
         h: 0.0317,
         texture: p3,
@@ -146,7 +146,7 @@ class IntroCanvas extends React.Component {
       }),
       box({
         pX: 0.55,
-        pY: 4,
+        pY: 4.2,
         w: 0.116,
         h: 0.0317,
         texture: p4,
@@ -154,8 +154,8 @@ class IntroCanvas extends React.Component {
         yScale: 0.2
       }),
       box({
-        pX: 0.7,
-        pY: 4,
+        pX: 0.71,
+        pY: 4.2,
         w: 0.1546,
         h: 0.0317,
         texture: p5,
@@ -165,7 +165,7 @@ class IntroCanvas extends React.Component {
       // ROW 2
       box({
         pX: 0.22,
-        pY: 3.4,
+        pY: 3.5,
         w: 0.116,
         h: 0.0318,
         texture: p6,
@@ -174,7 +174,7 @@ class IntroCanvas extends React.Component {
       }),
       box({
         pX: 0.36,
-        pY: 3.4,
+        pY: 3.5,
         w: 0.1159,
         h: 0.0318,
         texture: p7,
@@ -182,8 +182,8 @@ class IntroCanvas extends React.Component {
         yScale: 0.2
       }),
       box({
-        pX: 0.48,
-        pY: 3.4,
+        pX: 0.49,
+        pY: 3.5,
         w: 0.0773,
         h: 0.0318,
         texture: p8,
@@ -192,7 +192,7 @@ class IntroCanvas extends React.Component {
       }),
       box({
         pX: 0.61,
-        pY: 3.4,
+        pY: 3.5,
         w: 0.1546,
         h: 0.0318,
         texture: p9,
@@ -200,8 +200,8 @@ class IntroCanvas extends React.Component {
         yScale: 0.2
       }),
       box({
-        pX: 0.72,
-        pY: 3.4,
+        pX: 0.74,
+        pY: 3.5,
         w: 0.0386,
         h: 0.0318,
         texture: p10,
@@ -209,8 +209,8 @@ class IntroCanvas extends React.Component {
         yScale: 0.2
       }),
       box({
-        pX: 0.76,
-        pY: 3.4,
+        pX: 0.78,
+        pY: 3.5,
         w: 0.0386,
         h: 0.0318,
         texture: p10,
@@ -373,9 +373,9 @@ class IntroCanvas extends React.Component {
         xScale: 0.12,
         yScale: 0.2
       }),
-      // // ROW 6
+      // ROW 6
       box({
-        pX: 0.22,
+        pX: 0.21,
         pY: 1.5,
         w: 0.0774,
         h: 0.0476,
@@ -384,7 +384,7 @@ class IntroCanvas extends React.Component {
         yScale: 0.2
       }),
       box({
-        pX: 0.33,
+        pX: 0.311,
         pY: 1.5,
         w: 0.116,
         h: 0.0476,
@@ -393,7 +393,7 @@ class IntroCanvas extends React.Component {
         yScale: 0.2
       }),
       box({
-        pX: 0.4,
+        pX: 0.43,
         pY: 1.5,
         w: 0.0774,
         h: 0.0476,
@@ -420,7 +420,7 @@ class IntroCanvas extends React.Component {
         yScale: 0.2
       }),
       box({
-        pX: 0.74,
+        pX: 0.73,
         pY: 1.5,
         w: 0.116,
         h: 0.0476,
