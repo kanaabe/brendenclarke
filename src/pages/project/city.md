@@ -10,8 +10,9 @@ mediaList:
   - media: /assets/gp1_9566fdsfgaaaaaaa.jpg
     title: Mexico 2
   - caption: Alex
+    media: /assets/gp1_9901fdsfgaaaaaaa.jpg
     title: Mexico 3
-    video: 'https://www.youtube.com/embed/Ao8c0f89lWg'
+    video: ''
 templateKey: project
 ---
 
