@@ -1,12 +1,12 @@
 ---
 slug: city
-title: City
-thumbnailImage: /assets/p33.jpg
+title: Mexico
+thumbnailImage: /assets/gp1_9554fdsfgaaaaaaa.jpg
 category: photography
 mediaList:
-  - caption: 12/15/2015
-    media: /assets/commuters-crowd-indoors-1047330.jpg
-    title: Commuters
+  - caption: ''
+    media: /assets/gp1_9554fdsfgaaaaaaa.jpg
+    title: Mexico
   - media: /assets/blur-commuting-locomotive-245754.jpg
     title: Train
   - caption: Alex
