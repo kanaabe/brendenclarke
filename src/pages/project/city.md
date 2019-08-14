@@ -7,10 +7,10 @@ mediaList:
   - caption: ''
     media: /assets/gp1_9554fdsfgaaaaaaa.jpg
     title: Mexico
-  - media: /assets/blur-commuting-locomotive-245754.jpg
-    title: Train
+  - media: /assets/gp1_9566fdsfgaaaaaaa.jpg
+    title: Mexico 2
   - caption: Alex
-    title: Alex
+    title: Mexico 3
     video: 'https://www.youtube.com/embed/Ao8c0f89lWg'
 templateKey: project
 ---
