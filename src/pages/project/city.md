@@ -4,17 +4,18 @@ title: Mexico
 thumbnailImage: /assets/gp1_9554fdsfgaaaaaaa.jpg
 category: photography
 mediaList:
-  - caption: ''
-    media: /assets/gp1_9554fdsfgaaaaaaa.jpg
-    title: Mexico
-  - media: /assets/gp1_9566fdsfgaaaaaaa.jpg
-    title: Mexico 2
-  - caption: ''
-    media: /assets/gp1_9901fdsfgaaaaaaa.jpg
-    title: Mexico 3
-    video: ''
-  - media: /assets/gp1_9750fdsfgaaaaaaa.jpg
-    title: Mexico 4
+  - media: /assets/gp1_9554fdsfgaaaaaaa-min.jpg
+    title: Mex_1
+  - media: /assets/gp1_9566fdsfgaaaaaaa-min.jpg
+    title: Mex_2
+  - media: /assets/gp1_9589fdsfgaaaaaaa-min.jpg
+  - media: /assets/gp1_9603fdsfgaaaaaaa-min.jpg
+  - media: /assets/gp1_9685fdsfgaaaaaaa-min.jpg
+  - media: /assets/gp1_9793fdsfgaaaaaaa-min.jpg
+  - media: /assets/gp1_9877fdsfgaaaaaaa-min.jpg
+  - media: /assets/gp1_9901fdsfgaaaaaaa-min.jpg
+  - media: /assets/gp1_9918fdsfgaaaaaaa-min.jpg
+  - media: /assets/gp1_9942fdsfgaaaaaaa-min.jpg
 templateKey: project
 ---
 
