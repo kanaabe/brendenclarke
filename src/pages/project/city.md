@@ -1,7 +1,7 @@
 ---
 slug: city
 title: Mexico
-thumbnailImage: /assets/gp1_9554fdsfgaaaaaaa.jpg
+thumbnailImage: /assets/gp1_9554fdsfgaaaaaaa-min.jpg
 category: photography
 mediaList:
   - media: /assets/gp1_9554fdsfgaaaaaaa-min.jpg
