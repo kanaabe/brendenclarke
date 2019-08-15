@@ -1,6 +1,6 @@
 ---
 slug: city
-title: Mexico
+title: La Alteña // El Tesoro
 thumbnailImage: /assets/gp1_9554fdsfgaaaaaaa-min.jpg
 category: photography
 mediaList:
