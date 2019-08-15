@@ -1,15 +1,21 @@
 ---
 slug: first-impressions
 title: First Impressions
-thumbnailImage: /assets/p17.jpg
-category: film
+thumbnailImage: /assets/dsc00198fdsfgaaaaaaa-min.jpg
+category: photography
 mediaList:
-  - caption: 12/15/2015
-    media: ''
-    title: Commuters
-    video: 'https://www.youtube.com/embed/FoEpKtl4yqw'
-  - title: First Impressions
-    video: 'https://www.youtube.com/embed/NcGojSt06tI'
+  - media: /assets/dsc00279fdsfgaaaaaaa-min.jpg
+  - media: /assets/dsc00198fdsfgaaaaaaa-min.jpg
+  - media: /assets/dsc00199fdsfgaaaaaaa-min.jpg
+  - media: /assets/dsc00195fdsfgaaaaaaa-min.jpg
+  - media: /assets/dsc00196fdsfgaaaaaaa-min.jpg
+  - media: /assets/dsc00205fdsfgaaaaaaa-min.jpg
+  - media: /assets/dsc00264fdsfgaaaaaaa-min.jpg
+  - media: /assets/dsc00210fdsfgaaaaaaa-min.jpg
+  - media: /assets/dsc00253fdsfgaaaaaaa-min.jpg
+  - media: /assets/dsc00223fdsfgaaaaaaa-min.jpg
+  - media: /assets/dsc00277fdsfgaaaaaaa-min.jpg
+  - media: /assets/dsc00458fdsfgaaaaaaa-min.jpg
 templateKey: project
 ---
 
