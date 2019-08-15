@@ -1,19 +1,16 @@
 ---
-slug: landscapes
-title: Landscapes
-thumbnailImage: /assets/p24.jpg
+slug: nyc
+title: 'Grit // NYC Marathon '
+thumbnailImage: /assets/a85i2523fdsfgaaaaaaa.jpg
 category: photography
 mediaList:
-  - caption: Beach // 2019/1/1 // A LONG SUMMER AGO
-    media: /assets/beach-cliffs-clouds-895254.jpg
-    title: Beach
-  - caption: >-
-      Something I was thinking about for a while was how to catch waves like
-      this.
-    media: /assets/animals-avian-beach-760984.jpg
-    title: Waves
-  - media: /assets/background.jpg
-    title: A Landscape
+  - media: /assets/a85i2523fdsfgaaaaaaa.jpg
+  - media: /assets/a85i2524fdsfgaaaaaaa.jpg
+  - media: /assets/a85i2240fdsfgaaaaaaa.jpg
+  - media: /assets/a85i2567fdsfgaaaaaaa.jpg
+  - media: /assets/a85i2585fdsfgaaaaaaa.jpg
+  - media: /assets/a85i2593fdsfgaaaaaaa.jpg
+  - media: /assets/a85i2609fdsfgaaaaaaa.jpg
 templateKey: project
 ---
 
