@@ -1,10 +1,17 @@
 ---
 slug: herman-miller
-title: Herman Miller
-thumbnailImage: /assets/p1.jpg
-category: film
+title: Belize // Gear Patrol Magazine
+thumbnailImage: /assets/gp9_fishinwater_14610.jpg
+category: photography
 mediaList:
-  - video: 'https://www.youtube.com/embed/8ZxFr3m8b7U'
+  - media: /assets/dsc00891fdsfgaaaaaaa.jpg
+  - media: /assets/gp9_fishinwater_14603.jpg
+  - media: /assets/gp9_fishinwater_14611.jpg
+  - media: /assets/gp9_fishinwater_14608.jpg
+  - media: /assets/gp9_fishinwater_14610.jpg
+  - media: /assets/gp9_fishinwater_14600.jpg
+  - media: /assets/gp9_fishinwater_14598.jpg
+  - media: /assets/dsc01168fdsfgaaaaaaa.jpg
 templateKey: project
 ---
 
