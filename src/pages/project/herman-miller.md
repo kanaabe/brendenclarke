@@ -1,7 +1,7 @@
 ---
 slug: herman-miller
 title: Belize // Gear Patrol Magazine
-thumbnailImage: /assets/gp9_fishinwater_14610.jpg
+thumbnailImage: /assets/dsc00891fdsfgaaaaaaa.jpg
 category: photography
 mediaList:
   - media: /assets/dsc00891fdsfgaaaaaaa.jpg
