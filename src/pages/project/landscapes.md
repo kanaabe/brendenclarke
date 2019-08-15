@@ -1,5 +1,5 @@
 ---
-slug: nyc
+slug: Landscapes
 title: Grit // NYC Marathon
 thumbnailImage: /assets/a85i2523fdsfgaaaaaaa.jpg
 category: photography
