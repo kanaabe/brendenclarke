@@ -26,7 +26,7 @@ const ProjectNav = ({ category, location }) => (
     render={data => (
       <StyledNav>
         {data.allMarkdownRemark.edges.map(project => {
-          if (project.node.frontmatter.category !== category) return
+          if (project.node.frontmatter.category !== category) return ""
           const href = `/project/${project.node.frontmatter.slug}`
 
           return (

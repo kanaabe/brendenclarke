@@ -23,6 +23,7 @@ export default ({ data, location }) => {
                     height="100%"
                     frameBorder={0}
                     src={media.video}
+                    title={media.title}
                   />
                 ) : (
                   <Image alt={media.title} src={media.media} />
@@ -45,7 +46,6 @@ export const query = graphql`
         category
         mediaList {
           media
-          caption
           title
           video
         }

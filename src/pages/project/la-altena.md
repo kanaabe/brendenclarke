@@ -1,5 +1,5 @@
 ---
-slug: city
+slug: la-altena
 title: La Alteña // El Tesoro
 thumbnailImage: /assets/gp1_9554fdsfgaaaaaaa-min.jpg
 category: photography
@@ -18,4 +18,3 @@ mediaList:
   - media: /assets/gp1_9942fdsfgaaaaaaa-min.jpg
 templateKey: project
 ---
-

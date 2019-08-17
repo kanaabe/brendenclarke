@@ -1,5 +1,5 @@
 ---
-slug: herman-miller
+slug: belize
 title: Belize // Gear Patrol Magazine
 thumbnailImage: /assets/dsc00891fdsfgaaaaaaa.jpg
 category: photography
@@ -14,4 +14,3 @@ mediaList:
   - media: /assets/dsc01168fdsfgaaaaaaa.jpg
 templateKey: project
 ---
-
