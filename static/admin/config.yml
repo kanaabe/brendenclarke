@@ -15,8 +15,8 @@ collections:
         fields:
           - { name: slug, label: Slug }
           - { name: title, label: Title }
-          - { name: image, label: Image, widget: image }
-          - { name: video, label: Video Link }
+          - { name: image, label: Image, widget: image, required: false }
+          - { name: video, label: Video Link, required: false }
           - {
             label: Template Key,
             name: templateKey,
@@ -32,8 +32,8 @@ collections:
           - { name: slug, label: Slug }
           - { name: title, label: Title }
           - { name: image, label: Image, widget: image }
-          - { name: mainCopy, label: Main Copy, widget: markdown }
-          - { name: subCopy, label: Sub Copy, widget: markdown }
+          - { name: mainCopy, label: Main Copy, widget: markdown, required: false }
+          - { name: subCopy, label: Sub Copy, widget: markdown, required: false }
           - {
               label: Template Key,
               name: templateKey,
@@ -61,9 +61,9 @@ collections:
         widget: list
         fields:
           - { name: title, label: Title }
-          - { name: caption, label: Caption, widget: markdown }
-          - { name: media, label: Media, widget: file }
-          - { name: video, label: Video Link }
+          - { name: caption, label: Caption, widget: markdown, required: false }
+          - { name: media, label: Media, widget: file, required: false }
+          - { name: video, label: Video Link, required: false }
       - {
           label: Template Key,
           name: templateKey,
