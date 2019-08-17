@@ -1,20 +1,37 @@
 import React from "react"
 import styled from "styled-components"
+import { Text } from "./LayoutPrimitives"
 
 const ProjectList = ({ projects }) => {
   return (
     <Body>
       {projects.map(project => (
-        <ProjectBlock
-          backgroundUrl={project.node.frontmatter.thumbnailImage}
-          href={`/project/${project.node.frontmatter.slug}`}
-        />
+        <ProjectBlock href={`/project/${project.node.frontmatter.slug}`}>
+          <ProjectImage src={project.node.frontmatter.thumbnailImage} />
+          <Text size="12px" mono>
+            {project.node.frontmatter.title}
+          </Text>
+        </ProjectBlock>
       ))}
     </Body>
   )
 }
 
 export { ProjectList }
+
+const ProjectImage = styled.img`
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+
+  :hover {
+    filter: invert(1);
+  }
+
+  @media only screen and (max-width: 500px) {
+    width: 100%;
+  }
+`
 
 const Body = styled.div`
   display: flex;
@@ -36,10 +53,8 @@ const ProjectBlock = styled.a`
   background-color: lightgrey;
   background-size: cover;
   background-position: center;
-
-  :hover {
-    filter: invert(1);
-  }
+  text-decoration: none;
+  color: black;
 
   @media only screen and (max-width: 500px){
     width: 100%;

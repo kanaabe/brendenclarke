@@ -70,8 +70,8 @@ class IntroCanvas extends React.Component {
         wWidth * w * 1.2,
         wWidth * h * 1.2,
         {
-          restitution: 1,
-          frictionAir: 0.045,
+          restitution: 0.7,
+          frictionAir: 0.04,
           render: {
             sprite: {
               texture,
@@ -83,10 +83,12 @@ class IntroCanvas extends React.Component {
       )
     }
 
-    const ground = Bodies.rectangle(wWidth / 2, wHeight, wWidth, 100, {
+    const ground = Bodies.rectangle(wWidth / 2, wHeight, wWidth, wHeight / 2, {
       isStatic: true,
       render: {
-        fillStyle: "black"
+        fillStyle: "white",
+        strokeStyle: "black",
+        lineWidth: 3
       }
     })
 
