@@ -501,6 +501,11 @@ class IntroCanvas extends React.Component {
 const Canvas = styled.div`
   width: 100vw;
   height: 100vh;
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
 `
 
 export { IntroCanvas }

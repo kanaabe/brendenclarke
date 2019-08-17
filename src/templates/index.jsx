@@ -1,15 +1,26 @@
 import React from "react"
+import styled from "styled-components"
 import { LayoutWrapper } from "../components/LayoutWrapper"
 import { Body } from "../components/LayoutPrimitives"
 import { Nav } from "../components/Nav"
 import { IntroCanvas } from "../components/IntroCanvas"
 
-const Home = ({ location }) => {
+const Home = ({ location, data }) => {
+  const image = data.markdownRemark.frontmatter.image
+  const video = data.markdownRemark.frontmatter.video
+  console.log(data)
   return (
     <LayoutWrapper>
       <Body>
         <Nav location={location} />
         <IntroCanvas />
+        <MobileContainer>
+          {image ? (
+            <Image src={image} />
+          ) : (
+            <IFrame frameBorder={0} src={video} />
+          )}
+        </MobileContainer>
       </Body>
     </LayoutWrapper>
   )
@@ -25,6 +36,28 @@ export const query = graphql`
       }
     }
   }
+`
+
+const MobileContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+`
+
+const Image = styled.img`
+  width: auto;
+  height: 90vh;
+  object-fit: contain;
+`
+
+const IFrame = styled.iframe`
+  width: 100%;
+  height: 100%;
 `
 
 export default Home
