@@ -41,6 +41,7 @@ export const query = graphql`
 const MobileContainer = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
 
@@ -50,14 +51,15 @@ const MobileContainer = styled.div`
 `
 
 const Image = styled.img`
-  width: auto;
+  width: 90vw;
   height: 90vh;
   object-fit: contain;
 `
 
 const IFrame = styled.iframe`
+  margin-top: 50px;
   width: 100%;
-  height: 100%;
+  height: calc(100vw * 0.56);
 `
 
 export default Home
