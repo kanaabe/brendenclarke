@@ -1,6 +1,7 @@
 ---
 slug: index
 title: Brenden Clarke
-video: "https://www.youtube.com/embed/FoEpKtl4yqw"
+video: 'https://player.vimeo.com/video/353981735'
 templateKey: index
 ---
+
