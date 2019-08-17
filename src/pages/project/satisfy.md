@@ -16,9 +16,19 @@ mediaList:
     title: s
   - media: /assets/photo-oct-24-7-36-37-am-min.jpg
     title: s
-  - media: /assets/1z7a1034fdsfgaaaaaaa-min.jpg
+  - media: /assets/photo-oct-24-7-25-25-am-min.jpg
     title: s
   - media: /assets/photo-oct-24-7-09-28-am-min.jpg
+    title: s
+  - media: /assets/photo-oct-24-7-36-30-am-min.jpg
+    title: s
+  - media: /assets/photo-oct-23-10-25-48-am-min.jpg
+    title: s
+  - media: /assets/photo-oct-23-10-09-03-am-min.jpg
+    title: s
+  - media: /assets/photo-oct-23-10-00-31-am-min.jpg
+    title: s
+  - media: /assets/photo-oct-23-10-00-08-am-min.jpg
     title: s
 templateKey: project
 ---
