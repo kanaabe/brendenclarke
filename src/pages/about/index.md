@@ -9,7 +9,7 @@ mainCopy: |-
 
   Fav Color? Purple
 
-  Fav Musician? Francis and the Light
+  Fav Musician? Francis and the Lights
 
   Fav Movie? Rounders or Oceans 12
 
