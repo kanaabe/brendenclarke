@@ -27,7 +27,7 @@ const Nav = ({ location }) => (
         <NavLink to="/film" isActive={location.pathname.indexOf("film") > -1}>
           Film
         </NavLink>
-        <NavLink to="/page/about" isActive={location.pathname === "about"}>
+        <NavLink to="/about" isActive={location.pathname === "about"}>
           About
         </NavLink>
       </StyledNav>

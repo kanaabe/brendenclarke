@@ -7,6 +7,5 @@ subCopy: |-
   EMAIL: brendentclarke@gmail.com
 
   IG: [@brenden.jpeg](https://www.instagram.com/brenden.jpeg/)
-templateKey: page
+templateKey: about
 ---
-

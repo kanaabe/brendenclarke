@@ -42,6 +42,7 @@ export const query = graphql`
     }
   }
 `
+
 const Spacer = styled.div`
   height: 40px;
 `

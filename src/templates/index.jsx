@@ -15,4 +15,16 @@ const Home = ({ location }) => {
   )
 }
 
+export const query = graphql`
+  query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      frontmatter {
+        image
+        video
+      }
+    }
+  }
+`
+
 export default Home

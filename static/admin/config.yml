@@ -6,23 +6,42 @@ media_folder: static/assets
 public_folder: assets
 
 collections:
-  - name: page
-    label: Page
-    folder: src/pages/page
-    editor:
-      preview: false
-    fields:
-      - { name: slug, label: Slug }
-      - { name: title, label: Title }
-      - { name: image, label: Image, widget: image }
-      - { name: mainCopy, label: Main Copy, widget: markdown }
-      - { name: subCopy, label: Sub Copy, widget: markdown }
-      - {
-          label: Template Key,
-          name: templateKey,
-          widget: hidden,
-          default: page,
-        }
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: src/pages/index.md
+        label: Home
+        name: index
+        fields:
+          - { name: slug, label: Slug }
+          - { name: title, label: Title }
+          - { name: image, label: Image, widget: image }
+          - { name: video, label: Video Link }
+          - {
+            label: Template Key,
+            name: templateKey,
+            widget: hidden,
+            default: index,
+          }
+        editor:
+          preview: false
+      - file: src/pages/about/index.md
+        label: About
+        name: about
+        fields:
+          - { name: slug, label: Slug }
+          - { name: title, label: Title }
+          - { name: image, label: Image, widget: image }
+          - { name: mainCopy, label: Main Copy, widget: markdown }
+          - { name: subCopy, label: Sub Copy, widget: markdown }
+          - {
+              label: Template Key,
+              name: templateKey,
+              widget: hidden,
+              default: about,
+            }
+        editor:
+          preview: false
   - name: project
     label: Project
     folder: src/pages/project
