@@ -14,13 +14,11 @@ export default ({ data, location }) => {
         <Nav location={location} />
         <ProjectNav category={category} location={location} />
         <ProjectViewport>
-          <ProjectTrack numberOfWorks={mediaList.length}>
+          <ProjectTrack>
             {mediaList.map(media => (
               <ImageContainer key={media.title}>
                 {media.video ? (
-                  <iframe
-                    width="100%"
-                    height="100%"
+                  <IFrame
                     frameBorder={0}
                     src={media.video}
                     title={media.title}
@@ -63,13 +61,13 @@ const ProjectViewport = styled.div`
 
 const ProjectTrack = styled.div`
   display: flex;
-  width: calc(70vw * ${props => props.numberOfWorks});
+  width: 100%;
   height: 70vh;
-  margin: auto;
+  margin: auto 3%;
 
   @media only screen and (max-width: 500px) {
-    width: 100%;
     flex-direction: column;
+    margin: auto;
   }
 `
 
@@ -78,14 +76,21 @@ const ImageContainer = styled.div`
   width: 100%;
   height: 100%;
   padding: 0 30px;
+  text-align: center;
 
   @media only screen and (max-width: 500px) {
     padding: 0;
+    margin: 30px 0;
   }
 `
 
 const Image = styled.img`
-  width: 100%;
+  width: auto;
   height: 100%;
   object-fit: contain;
+`
+
+const IFrame = styled.iframe`
+  width: calc(70vh * 1.77);
+  height: 100%;
 `
