@@ -24,9 +24,8 @@ mainCopy: >-
   Fav Hobby? Poker
 
 
-  WORK: Nike, Leica, Mont Blanc, On Running, Satisfy, Jim Beam, El Tesoro,
-  Panerai, Rolex, Olukai, Orchard Street Runners, Hamilton, Gear Patrol, Hill
-  City //
+  WORK: Nike, Leica, Mont Blanc, On Running, Satisfy, Panerai, Rolex, Olukai,
+  Orchard Street Runners, Hamilton, Gear Patrol, Hill City //
 subCopy: |-
   EMAIL: brendentclarke@gmail.com
 
