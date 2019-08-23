@@ -1,5 +1,5 @@
 ---
-slug: David
+slug: david
 title: David Kilgore // ON Running
 thumbnailImage: /assets/david-5.jpg
 category: photography
