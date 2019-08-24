@@ -57,6 +57,10 @@ const ProjectViewport = styled.div`
   width: 100vw;
   height: 100vh;
   overflow: scroll;
+
+  @media only screen and (max-width: 500px) {
+    margin-top: 64px;
+  }
 `
 
 const ProjectTrack = styled.div`
@@ -66,6 +70,8 @@ const ProjectTrack = styled.div`
   margin: auto 3%;
 
   @media only screen and (max-width: 500px) {
+    width: 100vw;
+    height: 100%;
     flex-direction: column;
     margin: auto;
   }
@@ -81,6 +87,8 @@ const ImageContainer = styled.div`
   @media only screen and (max-width: 500px) {
     padding: 0;
     margin: 30px 0;
+    width: 100vw;
+    height: auto;
   }
 `
 
@@ -88,6 +96,11 @@ const Image = styled.img`
   width: auto;
   height: 100%;
   object-fit: contain;
+
+  @media only screen and (max-width: 500px) {
+    width: 100%;
+    height: auto;
+  }
 `
 
 const IFrame = styled.iframe`

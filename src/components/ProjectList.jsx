@@ -42,7 +42,8 @@ const Body = styled.div`
   align-content: flex-start;
 
   @media only screen and (max-width: 500px) {
-    margin: 93px auto;
+    margin: 93px auto 0 auto;
+    overflow: scroll;
   }
 `
 

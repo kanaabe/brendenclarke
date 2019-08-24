@@ -4,6 +4,7 @@ const Body = styled.div`
   display: flex;
   width: 100vw;
   height: 100vh;
+  overflow: scroll;
 `
 
 const Text = styled.div`
