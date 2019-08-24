@@ -39,6 +39,7 @@ const Body = styled.div`
   width: 100%;
   margin: 53px auto;
   max-width: 1250px;
+  align-content: flex-start;
 
   @media only screen and (max-width: 500px) {
     margin: 93px auto;
