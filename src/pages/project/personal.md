@@ -8,7 +8,11 @@ mediaList:
     title: '1'
   - media: /assets/dsc00531fdsfgaaaaaaa-min.jpg
     title: '2'
-  - media: /assets/madrid-20-min.jpg
+  - media: /assets/madrid-15-min.jpg
+    title: '3'
+  - media: /assets/chicago-min.jpg
+    title: '4'
+  - media: /assets/dsc01200fdsfgaaaaaaa-min.jpg
     title: '5'
   - media: /assets/dsc00458fdsfgaaaaaaa-min.jpg
     title: '6'
