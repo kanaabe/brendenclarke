@@ -14,10 +14,6 @@ mediaList:
     title: '4'
   - media: /assets/david-3.jpg
     title: '5'
-  - media: /assets/david-5.jpg
-    title: '6'
-  - media: /assets/david-3.jpg
-    title: '7'
 templateKey: project
 ---
 
