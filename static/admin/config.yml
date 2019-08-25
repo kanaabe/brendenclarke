@@ -87,4 +87,4 @@ collections:
               widget: relation
               collection: project
               searchFields: [title]
-              valueField: title
+              valueField: slug
