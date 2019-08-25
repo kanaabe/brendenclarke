@@ -29,7 +29,7 @@ const LayoutWrapper = ({ children }) => (
             type="text/css"
           />
           <link
-            href="https://fonts.googleapis.com/css?family=Rubik|Cutive+Mono"
+            href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap"
             rel="stylesheet"
           />
           <meta

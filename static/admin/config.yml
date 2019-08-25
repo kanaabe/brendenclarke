@@ -70,3 +70,21 @@ collections:
           widget: hidden,
           default: project,
         }
+  - name: settings
+    label: Settings
+    create: false
+    files:
+    - name: projectOrder
+      label: Project Order
+      file: src/utils/projectOrder.md
+      fields:
+        - label: Projects
+          name: projects
+          widget: list
+          fields:
+            - label: Project Name
+              name: projectName
+              widget: relation
+              collection: project
+              searchFields: [title]
+              valueField: title
