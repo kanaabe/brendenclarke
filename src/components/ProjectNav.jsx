@@ -45,12 +45,10 @@ const ProjectNav = ({ category, location }) => (
 )
 
 const StyledNav = styled.div`
-  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  width: 300px;
   top: 0;
   left: 0;
 
@@ -66,6 +64,7 @@ const NavLink = styled(Link)`
   font-size: 14px;
   padding: 5px 30px;
   font-weight: bold;
+  width: 270px;
 
   &:hover {
     color: red;

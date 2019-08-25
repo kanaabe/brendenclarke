@@ -39,7 +39,7 @@ const StyledNav = styled.div`
   display: flex;
   position: fixed;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100vw;
   top: 0;
   background-color: transparent;
@@ -59,6 +59,7 @@ const NavLink = styled(Link)`
   letter-spacing: 3px;
   padding: 15px;
   font-weight: bold;
+  margin: 0 30px;
   cursor: pointer;
   &:hover {
     color: red;
@@ -67,6 +68,7 @@ const NavLink = styled(Link)`
   @media only screen and (max-width: 500px) {
     font-size: 12px;
     padding: 5px;
+    margin: 0;
   }
 `
 

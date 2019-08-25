@@ -12,9 +12,9 @@ export default ({ data, location }) => {
     <LayoutWrapper>
       <Body>
         <Nav location={location} />
-        <ProjectNav category={category} location={location} />
         <ProjectViewport>
           <ProjectTrack>
+            <ProjectNav category={category} location={location} />
             {mediaList.map(media => (
               <ImageContainer key={media.title}>
                 {media.video ? (
@@ -67,7 +67,7 @@ const ProjectTrack = styled.div`
   display: flex;
   width: 100%;
   height: 70vh;
-  margin: auto 3%;
+  margin: auto 0;
 
   @media only screen and (max-width: 500px) {
     width: 100vw;

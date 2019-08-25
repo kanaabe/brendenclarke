@@ -21,7 +21,7 @@ export { ProjectList }
 
 const ProjectImage = styled.img`
   width: 200px;
-  height: 100px;
+  height: 200px;
   object-fit: cover;
 
   :hover {
@@ -37,7 +37,7 @@ const Body = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin: 53px auto;
+  margin: 53px auto 0 auto;
   max-width: 1250px;
   align-content: flex-start;
 
@@ -49,7 +49,7 @@ const Body = styled.div`
 
 const ProjectBlock = styled.a`
   width: 200px;
-  height: 100px;
+  height: 200px;
   margin: 20px;
   background-image: url('${props => props.backgroundUrl}');
   background-color: lightgrey;
