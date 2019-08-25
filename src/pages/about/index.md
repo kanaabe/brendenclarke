@@ -24,8 +24,12 @@ mainCopy: >-
   Fav Hobby? Poker
 
 
-  WORK: Nike, Leica, Mont Blanc, On Running, Satisfy, Panerai, Rolex, Olukai,
-  Orchard Street Runners, Hamilton, Gear Patrol, Hill City //
+  FEATURED WORK: Nike, Leica, Mont Blanc, On Running, Satisfy, Panerai, Olukai,
+  Orchard Street Runners, Hamilton, Gear Patrol, Hill City, Old Florida Barber
+  Shop, Gary Lazer Eyes  //
+
+
+  Current Project: "Above the Midnight Half"
 subCopy: |-
   EMAIL: brendentclarke@gmail.com
 
