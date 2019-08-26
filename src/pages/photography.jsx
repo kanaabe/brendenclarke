@@ -9,7 +9,7 @@ export default ({ data, location }) => {
     <LayoutWrapper>
       <Body>
         <Nav location={location} />
-        <ProjectList projects={data.allMarkdownRemark.edges} />
+        <ProjectList projects={data.projects.allMarkdownRemark.edges} />
       </Body>
     </LayoutWrapper>
   )
@@ -17,7 +17,14 @@ export default ({ data, location }) => {
 
 export const query = graphql`
   {
-    allMarkdownRemark(
+    order: markdownRemark(fileAbsolutePath: { regex: "/utils/" }) {
+      frontmatter {
+        projects {
+          projectName
+        }
+      }
+    }
+    projects: allMarkdownRemark(
       filter: {
         frontmatter: { category: { eq: "photography" } }
         fileAbsolutePath: { regex: "/project/" }

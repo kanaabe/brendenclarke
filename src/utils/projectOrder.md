@@ -1,4 +1,5 @@
 ---
+title: projectOrder
 projects:
   - projectName: Belize // Gear Patrol Magazine
   - projectName: David Kilgore // ON Running

@@ -78,6 +78,7 @@ collections:
       label: Project Order
       file: src/utils/projectOrder.md
       fields:
+        - { name: title, label: Title }
         - label: Projects
           name: projects
           widget: list
