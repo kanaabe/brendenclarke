@@ -4,6 +4,8 @@ title: 'Recent // Personal Work '
 thumbnailImage: /assets/chicago-min.jpg
 category: photography
 mediaList:
+  - media: /assets/paris-min.jpg
+    title: Paris Lead
   - media: /assets/dsc00077fdsfgaaaaaaa-min.jpg
     title: '1'
   - media: /assets/dsc00531fdsfgaaaaaaa-min.jpg
@@ -30,6 +32,12 @@ mediaList:
     title: '12'
   - media: /assets/madrid-17-min.jpg
     title: '13'
+  - media: /assets/1z6a3719-min.jpg
+    title: '14'
+  - media: /assets/bbs-min.jpg
+    title: '15'
+  - media: /assets/final-portait-min.jpg
+    title: '16'
 templateKey: project
 ---
 
