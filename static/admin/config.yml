@@ -79,8 +79,8 @@ collections:
       file: src/utils/photographyOrder.md
       fields:
         - { name: title, label: Title }
-        - label: Photography List
-          name: photographyList
+        - label: Projects List
+          name: projects
           widget: list
           fields:
             - label: Project
@@ -95,8 +95,8 @@ collections:
       file: src/utils/filmOrder.md
       fields:
         - { name: title, label: Title }
-        - label: Film List
-          name: filmList
+        - label: Projects
+          name: projects
           widget: list
           fields:
             - label: Project
