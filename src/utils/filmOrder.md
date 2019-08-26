@@ -1,6 +1,5 @@
 ---
 title: filmOrder
-filmList:
+projects:
   - project: first-impressions
 ---
-

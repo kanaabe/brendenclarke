@@ -1,6 +1,6 @@
 ---
 title: photographyOrder
-photographyList:
+projects:
   - project: belize
   - project: david
   - project: grit
@@ -11,4 +11,3 @@ photographyList:
   - project: satisfy
   - project: stairs
 ---
-
