@@ -5,14 +5,17 @@ import { Text } from "./LayoutPrimitives"
 const ProjectList = ({ projects }) => {
   return (
     <Body>
-      {projects.map(project => (
-        <ProjectBlock href={`/project/${project.node.frontmatter.slug}`}>
-          <ProjectImage src={project.node.frontmatter.thumbnailImage} />
-          <Text size="12px" mono>
-            {project.node.frontmatter.title}
-          </Text>
-        </ProjectBlock>
-      ))}
+      {projects.map(project => {
+        if (!project) return ""
+        return (
+          <ProjectBlock href={`/project/${project.node.frontmatter.slug}`}>
+            <ProjectImage src={project.node.frontmatter.thumbnailImage} />
+            <Text size="12px" mono>
+              {project.node.frontmatter.title}
+            </Text>
+          </ProjectBlock>
+        )
+      })}
     </Body>
   )
 }

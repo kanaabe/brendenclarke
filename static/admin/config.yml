@@ -74,17 +74,33 @@ collections:
     label: Settings
     create: false
     files:
-    - name: projectOrder
-      label: Project Order
-      file: src/utils/projectOrder.md
+    - name: photographyOrder
+      label: Photography Order
+      file: src/utils/photographyOrder.md
       fields:
         - { name: title, label: Title }
-        - label: Projects
-          name: projects
+        - label: Photography List
+          name: photographyList
           widget: list
           fields:
-            - label: Project Name
-              name: projectName
+            - label: Project
+              name: project
+              widget: relation
+              collection: project
+              searchFields: [title]
+              valueField: slug
+              displayFields: [title]
+    - name: filmOrder
+      label: Film Order
+      file: src/utils/filmOrder.md
+      fields:
+        - { name: title, label: Title }
+        - label: Film List
+          name: filmList
+          widget: list
+          fields:
+            - label: Project
+              name: project
               widget: relation
               collection: project
               searchFields: [title]

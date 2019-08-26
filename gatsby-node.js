@@ -9,7 +9,11 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     const value = createFilePath({
       node,
       getNode,
-      basePath: node.frontmatter.title === "projectOrder" ? "utils" : "pages"
+      basePath:
+        node.frontmatter.title === "filmOrder" ||
+        node.frontmatter.title === "photographyOrder"
+          ? "utils"
+          : "pages"
     })
     createNodeField({
       name: `slug`,

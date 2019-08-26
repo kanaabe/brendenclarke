@@ -5,11 +5,19 @@ import { Nav } from "../components/Nav"
 import { ProjectList } from "../components/ProjectList"
 
 export default ({ data, location }) => {
+  const allProjects = data.projects.edges
+  const sortedProjects = data.order.frontmatter.projects.map(p => {
+    const foundProject = allProjects.find(
+      project => project.node.frontmatter.slug === p.project
+    )
+    return foundProject
+  })
+
   return (
     <LayoutWrapper>
       <Body>
         <Nav location={location} />
-        <ProjectList projects={data.projects.allMarkdownRemark.edges} />
+        <ProjectList projects={sortedProjects} />
       </Body>
     </LayoutWrapper>
   )
@@ -17,10 +25,10 @@ export default ({ data, location }) => {
 
 export const query = graphql`
   {
-    order: markdownRemark(fileAbsolutePath: { regex: "/utils/" }) {
+    order: markdownRemark(frontmatter: { title: { eq: "photographyOrder" } }) {
       frontmatter {
         projects {
-          projectName
+          project
         }
       }
     }
