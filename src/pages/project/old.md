@@ -1,6 +1,6 @@
 ---
 slug: Old
-title: Old
+title: The Barber // Florida
 thumbnailImage: /assets/gp1_0235fdsfgaaaaaaa-min.jpg
 category: photography
 mediaList:
