@@ -1,6 +1,6 @@
 ---
 slug: personal
-title: 'Recent // Personal Work '
+title: Recent Personal //
 thumbnailImage: /assets/chicago-min.jpg
 category: photography
 mediaList:
