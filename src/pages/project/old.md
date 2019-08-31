@@ -1,6 +1,6 @@
 ---
 slug: old
-title: Old Florida
+title: Old Florida //
 thumbnailImage: /assets/gp1_0235fdsfgaaaaaaa-min.jpg
 category: photography
 mediaList:
