@@ -12,7 +12,7 @@ mediaList:
     title: Mex_2
   - media: /assets/tequila-2.jpg
     title: real 4
-  - media: /assets/tequilawide-7.jpg
+  - media: /assets/teqfuckkkk.jpg
     title: New 001 WIDE
   - media: /assets/gp1_9589fdsfgaaaaaaa-min.jpg
     title: '3'
