@@ -1,7 +1,7 @@
 ---
 slug: first-impressions
 title: 'Concept,DP,Editor // First Impressions'
-thumbnailImage: /assets/photo-oct-24-7-32-12-am-min.jpg
+thumbnailImage: /assets/screen-shot-2019-08-31-at-5.06.22-pm.png
 category: film
 mediaList:
   - title: '1'
