@@ -10,6 +10,8 @@ mediaList:
     title: Mex_1
   - media: /assets/gp1_9566fdsfgaaaaaaa-min.jpg
     title: Mex_2
+  - media: /assets/tequila-5.jpg
+    title: true4yessss
   - media: /assets/tequila-2.jpg
     title: real 4
   - media: /assets/teqfuckkkk.jpg
