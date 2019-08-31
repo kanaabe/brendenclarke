@@ -1,6 +1,6 @@
 ---
 slug: david
-title: David Kilgore // ON Running
+title: David Kilgore //
 thumbnailImage: /assets/david-5.jpg
 category: photography
 mediaList:
