@@ -10,8 +10,14 @@ mediaList:
     title: Mex_1
   - media: /assets/gp1_9566fdsfgaaaaaaa-min.jpg
     title: Mex_2
+  - media: /assets/tequila-2.jpg
+    title: real 4
+  - media: /assets/tequila-7.jpg
+    title: New 001 WIDE
   - media: /assets/gp1_9589fdsfgaaaaaaa-min.jpg
     title: '3'
+  - media: /assets/tequila-8.jpg
+    title: BACKSEAT
   - media: /assets/gp1_9603fdsfgaaaaaaa-min.jpg
     title: '4'
   - media: /assets/gp1_9685fdsfgaaaaaaa-min.jpg
@@ -24,6 +30,8 @@ mediaList:
     title: '8'
   - media: /assets/gp1_9918fdsfgaaaaaaa-min.jpg
     title: '9'
+  - media: /assets/tequila-12.jpg
+    title: 2ndtoL
   - media: /assets/gp1_9942fdsfgaaaaaaa-min.jpg
     title: '10'
 templateKey: project
