@@ -6,6 +6,8 @@ category: film
 mediaList:
   - title: '1'
     video: 'https://www.youtube.com/embed/FoEpKtl4yqw'
+  - title: '2'
+    video: 'https://www.youtube.com/embed/KQLXGiOqscY&t=12s'
 templateKey: project
 ---
 
