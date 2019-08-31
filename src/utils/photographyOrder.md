@@ -1,13 +1,14 @@
 ---
 title: photographyOrder
 projects:
-  - project: belize
-  - project: david
-  - project: grit
   - project: la-altena
-  - project: old
-  - project: olukai
-  - project: personal
   - project: satisfy
+  - project: olukai
+  - project: david
+  - project: belize
+  - project: grit
+  - project: old
   - project: stairs
+  - project: personal
 ---
+
