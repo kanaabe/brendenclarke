@@ -16,8 +16,6 @@ mediaList:
     title: New 001 WIDE
   - media: /assets/gp1_9589fdsfgaaaaaaa-min.jpg
     title: '3'
-  - media: /assets/tequila-8.jpg
-    title: BACKSEAT
   - media: /assets/gp1_9603fdsfgaaaaaaa-min.jpg
     title: '4'
   - media: /assets/gp1_9685fdsfgaaaaaaa-min.jpg
