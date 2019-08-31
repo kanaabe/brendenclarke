@@ -1,6 +1,6 @@
 ---
 slug: belize
-title: Belize // Gear Patrol Magazine
+title: Belize //
 thumbnailImage: /assets/dsc00891fdsfgaaaaaaa.jpg
 category: photography
 mediaList:
