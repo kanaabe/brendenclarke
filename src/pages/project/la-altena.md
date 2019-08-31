@@ -1,6 +1,6 @@
 ---
 slug: la-altena
-title: La Alteña // El Tesoro
+title: 'La Alteña // '
 thumbnailImage: /assets/gp1_9942fdsfgaaaaaaa-min.jpg
 category: photography
 mediaList:
