@@ -1,6 +1,6 @@
 ---
 slug: stairs
-title: Chicago // Stairs Study
+title: 'Chicago // '
 thumbnailImage: /assets/chicago-13-min.jpg
 category: photography
 mediaList:
