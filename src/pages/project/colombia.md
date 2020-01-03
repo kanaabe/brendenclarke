@@ -22,6 +22,22 @@ mediaList:
     title: '8'
   - media: /assets/colombia-26.jpg
     title: '9'
+  - media: /assets/colombia2.jpg
+    title: '10'
+  - media: /assets/colombia3.jpg
+    title: '11'
+  - media: /assets/colombia-29.jpg
+    title: '12'
+  - media: /assets/colombia-28.jpg
+    title: '13'
+  - media: /assets/colombia-27.jpg
+    title: '14'
+  - media: /assets/colombia4.jpg
+    title: '15'
+  - media: /assets/colombia12.jpg
+    title: '16'
+  - media: /assets/colombia-32.jpg
+    title: '17'
 templateKey: project
 ---
 
