@@ -31,10 +31,12 @@ mainCopy: >-
 
 
   Published Book: "Above the Midnight Half"
-subCopy: |-
+subCopy: >-
   EMAIL: brendentclarke@gmail.com
 
-  IG: [@brenden.jpeg](https://www.instagram.com/brenden.jpeg/)
+
+  IG: [@brenden.jpeg](https://www.instagram.com/brenden.jpeg/) //
+  [@nycbasement](https://www.instagram.com/nycbasement/)
 templateKey: about
 ---
 
