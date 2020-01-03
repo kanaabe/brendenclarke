@@ -15,11 +15,11 @@ export default ({ data, location }) => {
         <Container>
           <Image image={image} />
           <TextContainer>
-            <Text mono size="16px">
+            <Text mono size="12px">
               <MarkdownContent content={mainCopy} />
             </Text>
             <Spacer />
-            <Text mono size="14px">
+            <Text mono size="12px">
               <MarkdownContent content={subCopy} />
             </Text>
           </TextContainer>
@@ -80,7 +80,6 @@ const Image = styled.div`
 
   @media only screen and (max-width: 500px) {
     width: 100%;
-    height: 50vw;
     margin-bottom: 50px;
   }
 `

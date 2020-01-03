@@ -58,13 +58,12 @@ const StyledNav = styled.div`
 `
 
 const NavLink = styled(Link)`
-  font-family: Cutive Mono, sans-serif;
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
   color: ${props => (props.isActive ? "red" : "black")};
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
   padding: 5px 30px;
-  font-weight: bold;
-  width: 270px;
+  width: 220px;
 
   &:hover {
     color: red;

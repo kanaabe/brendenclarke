@@ -9,8 +9,10 @@ const Body = styled.div`
 
 const Text = styled.div`
   font-family: ${props =>
-    props.mono ? "Cutive Mono, sans-serif" : "Cutive Mono, sans-serif"};
+    props.mono ? "Arial, sans-serif" : "Arial, sans-serif"};
+  font-weight: 400;
   font-size: ${props => props.size || "24px"};
+  line-height: ${props => props.size || "24px"};
 `
 
 export { Body, Text }

@@ -21,13 +21,18 @@ const Nav = ({ location }) => (
         <NavLink
           to="/photography"
           isActive={location.pathname.indexOf("photography") > -1}
+          isSubLink
         >
           Photography
         </NavLink>
-        <NavLink to="/film" isActive={location.pathname.indexOf("film") > -1}>
+        <NavLink
+          to="/film"
+          isActive={location.pathname.indexOf("film") > -1}
+          isSubLink
+        >
           Film
         </NavLink>
-        <NavLink to="/about" isActive={location.pathname === "about"}>
+        <NavLink to="/about" isActive={location.pathname === "about"} isSubLink>
           About
         </NavLink>
       </StyledNav>
@@ -39,8 +44,7 @@ const StyledNav = styled.div`
   display: flex;
   position: fixed;
   align-items: center;
-  justify-content: center;
-  width: 100vw;
+  width: 100%;
   top: 0;
   background-color: transparent;
   z-index: 1000;
@@ -52,14 +56,14 @@ const StyledNav = styled.div`
 `
 
 const NavLink = styled(Link)`
-  font-family: Cutive Mono, sans-serif;
+  font-family: Arial, sans-serif;
   color: ${props => (props.isActive ? "red" : "black")};
   text-decoration: none;
-  font-size: 20px;
+  font-size: ${props => (props.isSubLink ? "16px" : "20px")};
   letter-spacing: 3px;
   padding: 15px;
-  font-weight: bold;
-  margin: 0 30px;
+  font-weight: ${props => (props.isSubLink ? 300 : 600)};
+  margin: 0;
   cursor: pointer;
   &:hover {
     color: red;
