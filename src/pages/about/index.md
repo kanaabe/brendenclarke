@@ -3,8 +3,8 @@ slug: about
 title: About
 image: /assets/img_2277-3.png
 mainCopy: >-
-  Brenden Clarke is a published author, photographer and director currently
-  living in NYC. 
+  Brenden Clarke is a published author, photographer, director and former
+  kindergarten teacher currently living in NYC. 
 
 
   Fav Food? Chicken Pot Pie
