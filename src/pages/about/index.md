@@ -3,7 +3,8 @@ slug: about
 title: About
 image: /assets/img_2277-3.png
 mainCopy: >-
-  Brenden Clarke is a photographer and director currently living in NYC. 
+  Brenden Clarke is a published author, photographer and director currently
+  living in NYC. 
 
 
   Fav Food? Chicken Pot Pie
@@ -24,12 +25,12 @@ mainCopy: >-
   Fav Hobby? Poker
 
 
-  FEATURED WORK: Nike, Leica, Mont Blanc, On Running, Satisfy, Panerai, Olukai,
-  Orchard Street Runners, Hamilton, Gear Patrol, Hill City, Old Florida Barber
-  Shop, Gary Lazer Eyes  //
+  FEATURED WORK: Nike, Leica, Mont Blanc, Under Armour, Seiko, On Running,
+  Satisfy, Panerai, Olukai, Orchard Street Runners, Hamilton, Gear Patrol, Hill
+  City, Old Florida Barber Shop, Gary Lazer Eyes  //
 
 
-  Current Project: "Above the Midnight Half"
+  Published Book: "Above the Midnight Half"
 subCopy: |-
   EMAIL: brendentclarke@gmail.com
 
