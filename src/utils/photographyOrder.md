@@ -1,6 +1,7 @@
 ---
 title: photographyOrder
 projects:
+  - project: Colombia
   - project: la-altena
   - project: satisfy
   - project: olukai
