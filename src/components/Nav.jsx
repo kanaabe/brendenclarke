@@ -57,7 +57,9 @@ const StyledNav = styled.div`
 
 const NavLink = styled(Link)`
   font-family: Arial, sans-serif;
-  color: ${props => (props.isActive ? "red" : "black")};
+  color: ${props => (props.isActive ? "rgb(140, 140, 190)" : "black")};
+  font-style: ${props =>
+    props.isActive && props.isSubLink ? "italic" : "none"};
   text-decoration: none;
   font-size: ${props => (props.isSubLink ? "16px" : "20px")};
   letter-spacing: 3px;
@@ -66,7 +68,8 @@ const NavLink = styled(Link)`
   margin: 0;
   cursor: pointer;
   &:hover {
-    color: red;
+    color: rgb(140, 140, 190);
+    font-style: italic;
   }
 
   @media only screen and (max-width: 500px) {

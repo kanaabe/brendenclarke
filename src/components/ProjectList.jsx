@@ -40,6 +40,11 @@ const ProjectBlock = styled.a`
   text-decoration: none;
   color: black;
 
+  &:hover {
+    color: rgb(140, 140, 190);
+    font-style: italic;
+  }
+
   @media only screen and (max-width: 500px) {
     margin: 5px;
   }
