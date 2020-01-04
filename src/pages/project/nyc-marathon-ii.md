@@ -1,5 +1,5 @@
 ---
-slug: nycmarathon2
+slug: nyc
 title: NYC Marathon II
 thumbnailImage: /assets/nyc-21-min.jpg
 category: photography
