@@ -1,6 +1,6 @@
 ---
 slug: stairs
-title: 'Chicago // '
+title: Staircase I
 thumbnailImage: /assets/chicago-13-min.jpg
 category: photography
 mediaList:
