@@ -8,6 +8,7 @@ projects:
   - project: david
   - project: belize
   - project: grit
+  - project: nycmarathon2
   - project: old
   - project: stairs
   - project: personal
