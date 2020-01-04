@@ -1,6 +1,6 @@
 ---
 slug: grit
-title: NYC Marathon //
+title: NYC Marathon I
 thumbnailImage: /assets/a85i2523fdsfgaaaaaaa.jpg
 category: photography
 mediaList:
