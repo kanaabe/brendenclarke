@@ -1,5 +1,5 @@
 ---
 title: filmOrder
 projects:
-  - project: first-impressions
+  - project: film-reel
 ---
