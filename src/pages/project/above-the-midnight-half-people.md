@@ -1,5 +1,5 @@
 ---
-slug: ATMH
+slug: Above The Midnight Half (People)
 title: Above The Midnight Half (People)
 thumbnailImage: /assets/osr-13.jpg
 category: photography
