@@ -1,5 +1,5 @@
 ---
-slug: Above The Midnight Half (People)
+slug: above-the-midnight-half-people
 title: Above The Midnight Half (People)
 thumbnailImage: /assets/osr-13.jpg
 category: photography
@@ -22,4 +22,3 @@ mediaList:
     title: Joe 4
 templateKey: project
 ---
-
