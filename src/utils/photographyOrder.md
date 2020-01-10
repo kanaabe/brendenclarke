@@ -2,7 +2,7 @@
 title: photographyOrder
 projects:
   - project: above-the-midnight-half-people
-  - project: Colombia
+  - project: colombia
   - project: la-altena
   - project: satisfy
   - project: olukai
@@ -11,4 +11,3 @@ projects:
   - project: nyc-marathon-ii
   - project: stairs
 ---
-
