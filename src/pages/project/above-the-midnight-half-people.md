@@ -40,6 +40,18 @@ mediaList:
     title: Caitlin 4
   - media: /assets/new-2.jpg
     title: Caitlin 5
+  - media: /assets/atmh-6.jpg
+    title: Leigh 1
+  - media: /assets/atmh-3.jpg
+    title: Leigh 2
+  - media: /assets/atmh-4.jpg
+    title: Leigh 3
+  - media: /assets/atmh-9.jpg
+    title: Leigh 4
+  - media: /assets/atmh-5.jpg
+    title: Leigh 5
+  - media: /assets/atmh-8.jpg
+    title: Leigh 6
 templateKey: project
 ---
 
