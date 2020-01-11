@@ -18,11 +18,11 @@ collections:
           - { name: image, label: Image, widget: image, required: false }
           - { name: video, label: Video Link, required: false }
           - {
-            label: Template Key,
-            name: templateKey,
-            widget: hidden,
-            default: index,
-          }
+              label: Template Key,
+              name: templateKey,
+              widget: hidden,
+              default: index,
+            }
         editor:
           preview: false
       - file: src/pages/about/index.md
@@ -32,8 +32,18 @@ collections:
           - { name: slug, label: Slug }
           - { name: title, label: Title }
           - { name: image, label: Image, widget: image }
-          - { name: mainCopy, label: Main Copy, widget: markdown, required: false }
-          - { name: subCopy, label: Sub Copy, widget: markdown, required: false }
+          - {
+              name: mainCopy,
+              label: Main Copy,
+              widget: markdown,
+              required: false,
+            }
+          - {
+              name: subCopy,
+              label: Sub Copy,
+              widget: markdown,
+              required: false,
+            }
           - {
               label: Template Key,
               name: templateKey,
@@ -49,7 +59,7 @@ collections:
     editor:
       preview: false
     fields:
-      - { name: slug, label: Slug }
+      # - { name: slug, label: Slug }
       - { name: title, label: Title }
       - { name: thumbnailImage, label: Thumbnail Image, widget: image }
       - name: category
@@ -74,35 +84,35 @@ collections:
     label: Settings
     create: false
     files:
-    - name: photographyOrder
-      label: Photography Order
-      file: src/utils/photographyOrder.md
-      fields:
-        - { name: title, label: Title }
-        - label: Projects List
-          name: projects
-          widget: list
-          fields:
-            - label: Project
-              name: project
-              widget: relation
-              collection: project
-              searchFields: [title]
-              valueField: slug
-              displayFields: [title]
-    - name: filmOrder
-      label: Film Order
-      file: src/utils/filmOrder.md
-      fields:
-        - { name: title, label: Title }
-        - label: Projects
-          name: projects
-          widget: list
-          fields:
-            - label: Project
-              name: project
-              widget: relation
-              collection: project
-              searchFields: [title]
-              valueField: slug
-              displayFields: [title]
+      - name: photographyOrder
+        label: Photography Order
+        file: src/utils/photographyOrder.md
+        fields:
+          - { name: title, label: Title }
+          - label: Projects List
+            name: projects
+            widget: list
+            fields:
+              - label: Project
+                name: project
+                widget: relation
+                collection: project
+                searchFields: [title]
+                valueField: slug
+                displayFields: [title]
+      - name: filmOrder
+        label: Film Order
+        file: src/utils/filmOrder.md
+        fields:
+          - { name: title, label: Title }
+          - label: Projects
+            name: projects
+            widget: list
+            fields:
+              - label: Project
+                name: project
+                widget: relation
+                collection: project
+                searchFields: [title]
+                valueField: slug
+                displayFields: [title]
