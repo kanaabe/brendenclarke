@@ -8,7 +8,6 @@ projects:
   - project: Punk Ain't Dead
   - project: 'Paris // '
   - project: Hawaii 1 //
-  - project: David Kilgore //
   - project: NYC Marathon I
   - project: NYC Marathon II
   - project: Staircase I
