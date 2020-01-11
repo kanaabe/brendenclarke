@@ -1,8 +1,9 @@
 ---
 title: photographyOrder
 projects:
-  - project: Above The Midnight Half (People)
   - project: Colombia
+  - project: Above The Midnight Half (People)
+  - project: Above The Midnight Half (Race)
   - project: 'La Alteña '
   - project: Punk Ain't Dead
   - project: 'Paris // '
