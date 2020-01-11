@@ -37,6 +37,15 @@ subCopy: >-
 
   IG: [@brenden.jpeg](https://www.instagram.com/brenden.jpeg/) //
   [@nycbasement](https://www.instagram.com/nycbasement/)
+
+
+
+
+
+
+
+
+  Website by Kana Abe // [@kana.biz](https://www.instagram.com/kana.biz/?hl=en)
 templateKey: about
 ---
 
