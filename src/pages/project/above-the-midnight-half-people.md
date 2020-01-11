@@ -20,5 +20,16 @@ mediaList:
     title: Joe 3
   - media: /assets/joenew-2.jpg
     title: Joe 4
+  - media: /assets/osr-21.jpg
+    title: Joe 5
+  - media: /assets/jtest-3.jpg
+    title: Joe 6
+  - media: /assets/newjoe-2.jpg
+    title: Joe 7
+  - media: /assets/newjoe.jpg
+    title: Joe 8
+  - media: /assets/osr-20.jpg
+    title: Joe 9
 templateKey: project
 ---
+
