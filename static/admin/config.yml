@@ -58,8 +58,8 @@ collections:
     create: true
     editor:
       preview: false
+    slug: "{{slug}}"
     fields:
-      # - { name: slug, label: Slug }
       - { name: title, label: Title }
       - { name: thumbnailImage, label: Thumbnail Image, widget: image }
       - name: category
