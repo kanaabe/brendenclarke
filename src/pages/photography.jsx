@@ -6,12 +6,9 @@ import { ProjectList } from "../components/ProjectList"
 
 export default ({ data, location }) => {
   const allProjects = data.projects.edges
-  const sortedProjects = data.order.frontmatter.projects.map(p => {
-    const foundProject = allProjects.find(
-      project => project.node.frontmatter.slug === p.project
-    )
-    return foundProject
-  })
+  const sortedProjects = data.order.frontmatter.projects.map(p =>
+    allProjects.find(project => project.node.frontmatter.title === p.project)
+  )
 
   return (
     <LayoutWrapper>
@@ -42,9 +39,11 @@ export const query = graphql`
         node {
           id
           html
+          fields {
+            slug
+          }
           frontmatter {
             title
-            slug
             thumbnailImage
           }
         }

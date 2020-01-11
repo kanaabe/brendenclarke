@@ -98,7 +98,7 @@ collections:
                 widget: relation
                 collection: project
                 searchFields: [title]
-                valueField: slug
+                valueField: title
                 displayFields: [title]
       - name: filmOrder
         label: Film Order
@@ -114,5 +114,5 @@ collections:
                 widget: relation
                 collection: project
                 searchFields: [title]
-                valueField: slug
+                valueField: title
                 displayFields: [title]

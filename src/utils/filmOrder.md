@@ -1,5 +1,5 @@
 ---
 title: filmOrder
 projects:
-  - project: film-reel
+  - project: Film Reel
 ---

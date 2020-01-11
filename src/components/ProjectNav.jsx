@@ -13,9 +13,11 @@ const ProjectNav = ({ category, location }) => (
             node {
               id
               html
+              fields {
+                slug
+              }
               frontmatter {
                 title
-                slug
                 category
               }
             }
@@ -27,12 +29,12 @@ const ProjectNav = ({ category, location }) => (
       <StyledNav>
         {data.allMarkdownRemark.edges.map(project => {
           if (project.node.frontmatter.category !== category) return ""
-          const href = `/project/${project.node.frontmatter.slug}`
+          const href = `${project.node.fields.slug}`
 
           return (
             <NavLink
               isActive={location.pathname.indexOf(href) > -1}
-              key={project.node.frontmatter.slug}
+              key={project.node.fields.slug}
               to={href}
             >
               {project.node.frontmatter.title}

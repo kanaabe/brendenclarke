@@ -8,7 +8,7 @@ const ProjectList = ({ projects }) => {
       {projects.map(project => {
         if (!project) return ""
         return (
-          <ProjectBlock href={`/project/${project.node.frontmatter.slug}`}>
+          <ProjectBlock href={`${project.node.fields.slug}`}>
             <Text size="12px" mono>
               {project.node.frontmatter.title}
             </Text>

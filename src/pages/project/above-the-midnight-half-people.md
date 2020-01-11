@@ -1,5 +1,4 @@
 ---
-slug: above-the-midnight-half-people
 title: Above The Midnight Half (People)
 thumbnailImage: /assets/osr-13.jpg
 category: photography
@@ -54,4 +53,3 @@ mediaList:
     title: Leigh 6
 templateKey: project
 ---
-
