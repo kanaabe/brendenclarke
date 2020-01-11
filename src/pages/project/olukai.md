@@ -1,6 +1,6 @@
 ---
 slug: olukai
-title: Hawaii 1 //
+title: Hawaii
 thumbnailImage: /assets/dsc00198fdsfgaaaaaaa-min.jpg
 category: photography
 mediaList:
