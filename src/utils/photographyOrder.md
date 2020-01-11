@@ -11,4 +11,6 @@ projects:
   - project: grit
   - project: nyc-marathon-ii
   - project: stairs
+  - project: jack
 ---
+
