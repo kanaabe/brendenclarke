@@ -1,6 +1,6 @@
 ---
 slug: satisfy
-title: 'Paris // '
+title: 'Paris '
 thumbnailImage: /assets/photo-oct-24-7-35-29-am-min.jpg
 category: photography
 mediaList:
