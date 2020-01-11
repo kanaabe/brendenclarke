@@ -30,6 +30,16 @@ mediaList:
     title: Joe 8
   - media: /assets/osr-20.jpg
     title: Joe 9
+  - media: /assets/atmh-21.jpg
+    title: Caitlin 1
+  - media: /assets/atmh-20.jpg
+    title: Caitlin 2
+  - media: /assets/atmh-22.jpg
+    title: Caitlin 3
+  - media: /assets/new.jpg
+    title: Caitlin 4
+  - media: /assets/new-2.jpg
+    title: Caitlin 5
 templateKey: project
 ---
 
