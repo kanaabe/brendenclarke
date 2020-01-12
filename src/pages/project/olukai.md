@@ -1,5 +1,4 @@
 ---
-slug: olukai
 title: Hawaii
 thumbnailImage: /assets/dsc00198fdsfgaaaaaaa-min.jpg
 category: photography
@@ -26,8 +25,6 @@ mediaList:
     title: '10'
   - media: /assets/dsc00277fdsfgaaaaaaa-min.jpg
     title: '11'
-  - media: /assets/dsc00458fdsfgaaaaaaa-min.jpg
-    title: '12'
 templateKey: project
 ---
 
