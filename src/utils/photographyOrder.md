@@ -11,5 +11,6 @@ projects:
   - project: Staircase I
   - project: 'Paris // '
   - project: Hawaii 1 //
+  - project: Recent & Personal
 ---
 
