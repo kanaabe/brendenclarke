@@ -35,6 +35,8 @@ mainCopy: >-
 
   2018 Telly Award Winner for Best Social Video\
 
+  \
+
   2019 Strava Year in Sport Photo Award Winner
 subCopy: >-
   EMAIL: brendentclarke@gmail.com
