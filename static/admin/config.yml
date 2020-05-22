@@ -66,6 +66,9 @@ collections:
         widget: select
         label: Category
         options: ["photography", "film"]
+      - name: format
+        label: Format
+        options: ["grid", "carousel"]
       - name: mediaList
         label: "Media List"
         widget: list

@@ -13,14 +13,14 @@ const Nav = ({ location }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <StyledNav>
         <NavLink to="/" isActive={location.pathname === "/"}>
           {data.site.siteMetadata.authorName}
         </NavLink>
         <NavLink
-          to="/photography"
-          isActive={location.pathname.indexOf("photography") > -1}
+          to="/project/overview"
+          isActive={location.pathname.indexOf("project") > -1}
           isSubLink
         >
           Photography
@@ -50,25 +50,23 @@ const StyledNav = styled.div`
   z-index: 1000;
 
   @media only screen and (max-width: 500px) {
-    flex-direction: column;
     align-items: flex-start;
   }
 `
 
 const NavLink = styled(Link)`
   font-family: Arial, sans-serif;
-  color: ${props => (props.isActive ? "rgb(140, 140, 190)" : "black")};
-  font-style: ${props =>
+  color: black;
+  font-style: ${(props) =>
     props.isActive && props.isSubLink ? "italic" : "none"};
   text-decoration: none;
-  font-size: ${props => (props.isSubLink ? "16px" : "20px")};
+  font-size: ${(props) => (props.isSubLink ? "16px" : "20px")};
   letter-spacing: 3px;
   padding: 15px;
-  font-weight: ${props => (props.isSubLink ? 300 : 600)};
+  font-weight: ${(props) => (props.isSubLink ? 300 : 600)};
   margin: 0;
   cursor: pointer;
   &:hover {
-    color: rgb(140, 140, 190);
     font-style: italic;
   }
 
