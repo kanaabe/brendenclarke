@@ -8,7 +8,7 @@ import { IntroCanvas } from "../components/IntroCanvas"
 const Home = ({ location, data }) => {
   const image = data.markdownRemark.frontmatter.image
   const video = data.markdownRemark.frontmatter.video
-  console.log(data)
+
   return (
     <LayoutWrapper>
       <Body>
