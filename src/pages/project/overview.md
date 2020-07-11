@@ -6,7 +6,7 @@ format: grid
 mediaList:
   - media: /assets/mass3.jpg
     title: '1'
-  - media: /assets/belize-2.jpg
+  - media: /assets/new-docu-35.jpg
     title: '2'
   - media: /assets/belize-9.jpg
     title: '3'
@@ -24,6 +24,16 @@ mediaList:
     title: '9'
   - media: /assets/madrid-13.jpg
     title: '10'
+  - media: /assets/colo1-8.jpg
+    title: '11'
+  - media: /assets/david1-28.jpg
+    title: '12'
+  - media: /assets/first-test-6.jpg
+    title: '13'
+  - media: /assets/mass-3.jpg
+    title: '14'
+  - media: /assets/mass-55.jpg
+    title: '15'
 templateKey: project
 ---
 
