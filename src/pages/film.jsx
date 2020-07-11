@@ -25,19 +25,30 @@ export default ({ data, location }) => {
         {sortedProjects.length > 1 ? (
           <ProjectList projects={sortedProjects} />
         ) : (
-          <Flex alignItems="center" width="100%" height="100%">
-            <Box
-              width="100%"
-              paddingBottom="56.25%"
-              style={{ position: "relative" }}
-              height="0"
+          <Flex
+            justifyContent="center"
+            alignItems="center"
+            width="100%"
+            height="100%"
+          >
+            <Flex
+              alignItems="center"
+              width={["100%", "80%"]}
+              height={["100%", "80%"]}
             >
-              <IFrame
-                frameBorder={0}
-                src={firstProject.video}
-                title={firstProject.title}
-              />
-            </Box>
+              <Box
+                width="100%"
+                paddingBottom="56.25%"
+                style={{ position: "relative" }}
+                height="0"
+              >
+                <IFrame
+                  frameBorder={0}
+                  src={firstProject.video}
+                  title={firstProject.title}
+                />
+              </Box>
+            </Flex>
           </Flex>
         )}
       </Body>
