@@ -34,6 +34,16 @@ mediaList:
     title: '14'
   - media: /assets/mass-55.jpg
     title: '15'
+  - media: /assets/david2-15.jpg
+    title: '16'
+  - media: /assets/mass2-8.jpg
+    title: '17'
+  - media: /assets/tequila-26.jpg
+    title: '18'
+  - media: /assets/colo2-11.jpg
+    title: '19'
+  - media: /assets/new-docu-59.jpg
+    title: '20'
 templateKey: project
 ---
 
