@@ -2,6 +2,7 @@
 title: Overview
 thumbnailImage: /assets/a85i4733-2-min.jpg
 category: photography
+format: grid
 mediaList:
   - media: /assets/mass3.jpg
     title: '1'
