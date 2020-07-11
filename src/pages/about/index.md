@@ -3,26 +3,10 @@ slug: about
 title: About
 image: /assets/img_2277-3.png
 mainCopy: >-
-  Brenden Clarke is a published author, photographer, director and former
-  kindergarten teacher currently living in NYC. 
-
-
-  Fav Food? Chicken Pot Pie
-
-
-  Fav Color? Purple
-
-
-  Fav Musician? Francis and the Lights
-
-
-  Fav Movie? Rounders or Oceans 12
-
-
-  Fav Place? Sokcho, South Korea
-
-
-  Fav Hobby? Poker
+  Brenden Clarke (b.1993) is a photographer and filmmaker currently living in
+  NYC. He is the recipient of various photography and film awards and accolades
+  for both his commercial and editorial work. He has published one book, Above
+  The Midnight Half (2019). 
 
 
   FEATURED COMMERCIAL WORK: Nike, Leica, Gap Inc, Mont Blanc, Strava, Under
@@ -31,9 +15,6 @@ mainCopy: >-
 
   FEATURED EDITORIAL WORK: The Washington Post, CNN, ESPN, ABC, Sports
   Illustrated, Runners World, Like The Wind, Gear Patrol //
-
-
-  Published Book: "Above the Midnight Half"
 
 
   AWARDS:
