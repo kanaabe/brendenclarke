@@ -25,32 +25,36 @@ mainCopy: >-
   Fav Hobby? Poker
 
 
-  FEATURED WORK: Nike, Leica, Mont Blanc, Under Armour, Seiko, On Running,
-  Satisfy, Panerai, Olukai, Orchard Street Runners, Hamilton, Gear Patrol, Hill
-  City, Old Florida Barber Shop, Gary Lazer Eyes  //
+  FEATURED COMMERCIAL WORK: Nike, Leica, Gap Inc, Mont Blanc, Strava, Under
+  Armour, Seiko, On Running, Kosta Browne, Satisfy, Document, Panerai, Olukai //
+
+
+  FEATURED EDITORIAL WORK: The Washington Post, CNN, ESPN, ABC, Sports
+  Illustrated, Runners World, Like The Wind, Gear Patrol //
 
 
   Published Book: "Above the Midnight Half"
 
 
-  2018 Telly Award Winner for Best Social Video\
+  AWARDS:
+
+
+  2018 Silver Telly Award Winner for Best Social Video - Vertical Format\
 
   \
 
-  2019 Strava Year in Sport Photo Award Winner
-subCopy: >-
+  2019 Strava Year in Sport Photo Award Winner 
+
+
+  2019 Folio Award Eddie for Sponsored Content
+
+
+  2019 Gold Telly Award for Sponsored Video 
+
+
+  2019 Silver Telly Award for Best Social Video
+subCopy: |-
   EMAIL: brendentclarke@gmail.com
-
-
-  IG: [@brenden.jpeg](https://www.instagram.com/brenden.jpeg/) //
-  [@nycbasement](https://www.instagram.com/nycbasement/)
-
-
-
-
-
-
-
 
   Website by Kana Abe // [@kana.biz](https://www.instagram.com/kana.biz/?hl=en)
 templateKey: about
