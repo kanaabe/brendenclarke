@@ -27,10 +27,10 @@ mainCopy: >-
   2019 Strava Year in Sport Photo Award Winner 
 
 
-  2019 Folio Award Eddie for Sponsored Content
+  2019 Folio Award Eddie for Branded Content
 
 
-  2019 Gold Telly Award for Sponsored Video 
+  2019 Gold Telly Award for Branded Video 
 
 
   2019 Silver Telly Award for Best Social Video
