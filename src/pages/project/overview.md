@@ -38,6 +38,12 @@ mediaList:
     title: '16'
   - media: /assets/mass2-8.jpg
     title: '17'
+  - media: /assets/mass3.jpg
+    title: '18'
+  - media: /assets/new-docu-35.jpg
+    title: '19'
+  - media: /assets/mass-57.jpg
+    title: '20'
 templateKey: project
 ---
 
