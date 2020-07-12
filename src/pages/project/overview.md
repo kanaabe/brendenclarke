@@ -20,8 +20,6 @@ mediaList:
     title: '7'
   - media: /assets/colo1-3.jpg
     title: '8'
-  - media: /assets/n9.jpg
-    title: '26'
   - media: /assets/costa2-4.jpg
     title: '9'
   - media: /assets/madrid-13.jpg
