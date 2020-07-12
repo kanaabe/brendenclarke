@@ -44,10 +44,6 @@ mediaList:
     title: '19'
   - media: /assets/mass-57.jpg
     title: '20'
-  - media: /assets/new-2.jpg
-    title: '21'
-  - media: /assets/newjoe-2.jpg
-    title: '22'
 templateKey: project
 ---
 
