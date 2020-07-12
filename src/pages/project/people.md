@@ -4,16 +4,30 @@ thumbnailImage: /assets/1z7a1034fdsfgaaaaaaa-min.jpg
 category: photography
 format: carousel
 mediaList:
-  - media: /assets/joe-gric.jpg
+  - media: /assets/people11.jpg
     title: '1'
-  - media: /assets/colo2-12.jpg
+  - media: /assets/joe-gric.jpg
     title: '2'
-  - media: /assets/david1-35.jpg
+  - media: /assets/people7.jpg
     title: '3'
-  - media: /assets/mass3-2.jpg
+  - media: /assets/people5.jpg
     title: '4'
-  - media: /assets/new-docu-42.jpg
+  - media: /assets/costaques.jpg
     title: '5'
+  - media: /assets/people2.jpg
+    title: '6'
+  - media: /assets/people3.jpg
+    title: '7'
+  - media: /assets/people9.jpg
+    title: '8'
+  - media: /assets/people12.jpg
+    title: '9'
+  - media: /assets/people6.jpg
+    title: '10'
+  - media: /assets/people1.jpg
+    title: '11'
+  - media: /assets/first-test-14.jpg
+    title: '12'
 templateKey: project
 ---
 
