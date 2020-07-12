@@ -6,10 +6,10 @@ format: grid
 mediaList:
   - media: /assets/costaques.jpg
     title: '1'
-  - media: /assets/mass3-2.jpg
-    title: '2'
   - media: /assets/tequila-19.jpg
     title: '4'
+  - media: /assets/mass3-2.jpg
+    title: '2'
   - media: /assets/belize-9.jpg
     title: '3'
   - media: /assets/new-red.jpg
