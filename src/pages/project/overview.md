@@ -42,8 +42,6 @@ mediaList:
     title: '18'
   - media: /assets/colo2-11.jpg
     title: '19'
-  - media: /assets/new-docu-59.jpg
-    title: '20'
 templateKey: project
 ---
 
