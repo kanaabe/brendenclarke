@@ -44,6 +44,16 @@ mediaList:
     title: '19'
   - media: /assets/mass-57.jpg
     title: '20'
+  - media: /assets/chicago-28-min.jpg
+    title: '21'
+  - media: /assets/first-test-8.jpg
+    title: '22'
+  - media: /assets/mass-49.jpg
+    title: '23'
+  - media: /assets/madrid-19.jpg
+    title: '24'
+  - media: /assets/mass2-9.jpg
+    title: '25'
 templateKey: project
 ---
 
