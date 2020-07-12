@@ -4,6 +4,8 @@ thumbnailImage: /assets/new9.jpg
 category: photography
 format: carousel
 mediaList:
+  - media: /assets/n1.jpg
+    title: '11'
   - media: /assets/new2.jpg
     title: '1'
   - media: /assets/new4.jpg
@@ -24,6 +26,10 @@ mediaList:
     title: '9'
   - media: /assets/belize-8.jpg
     title: '10'
+  - media: /assets/n3.jpg
+    title: '12'
+  - media: /assets/n11.jpg
+    title: '13'
 templateKey: project
 ---
 
