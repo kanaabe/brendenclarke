@@ -6,17 +6,17 @@ format: grid
 mediaList:
   - media: /assets/costaques.jpg
     title: '1'
-  - media: /assets/mass3-2.jpg
-    title: '2'
   - media: /assets/belize-9.jpg
     title: '3'
   - media: /assets/tequila-19.jpg
     title: '4'
+  - media: /assets/mass3-2.jpg
+    title: '2'
   - media: /assets/new-red-3.jpg
     title: '5'
-  - media: /assets/dsc00279fdsfgaaaaaaa-min.jpg
+  - media: /assets/mass3-5.jpg
     title: '6'
-  - media: /assets/costaques.jpg
+  - media: /assets/tequila-26.jpg
     title: '7'
   - media: /assets/colo1-3.jpg
     title: '8'
