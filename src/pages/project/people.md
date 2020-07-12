@@ -4,7 +4,7 @@ thumbnailImage: /assets/1z7a1034fdsfgaaaaaaa-min.jpg
 category: photography
 format: carousel
 mediaList:
-  - media: /assets/costaques.jpg
+  - media: /assets/joe-gric.jpg
     title: '1'
   - media: /assets/colo2-12.jpg
     title: '2'
