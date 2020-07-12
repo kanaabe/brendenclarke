@@ -4,17 +4,17 @@ thumbnailImage: /assets/a85i4733-2-min.jpg
 category: photography
 format: grid
 mediaList:
-  - media: /assets/mass3.jpg
+  - media: /assets/costaques.jpg
     title: '1'
-  - media: /assets/new-docu-35.jpg
+  - media: /assets/mass3-2.jpg
     title: '2'
   - media: /assets/belize-9.jpg
     title: '3'
   - media: /assets/tequila-19.jpg
     title: '4'
-  - media: /assets/new-docu-36.jpg
+  - media: /assets/new-red-3.jpg
     title: '5'
-  - media: /assets/mass-49.jpg
+  - media: /assets/dsc00279fdsfgaaaaaaa-min.jpg
     title: '6'
   - media: /assets/costaques.jpg
     title: '7'
