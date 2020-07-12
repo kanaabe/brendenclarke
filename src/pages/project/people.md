@@ -28,6 +28,12 @@ mediaList:
     title: '11'
   - media: /assets/first-test-14.jpg
     title: '12'
+  - media: /assets/new1.jpg
+    title: '13'
+  - media: /assets/new5.jpg
+    title: '14'
+  - media: /assets/new8.jpg
+    title: '15'
 templateKey: project
 ---
 
