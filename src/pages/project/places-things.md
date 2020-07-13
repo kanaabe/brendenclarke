@@ -4,6 +4,8 @@ thumbnailImage: /assets/new9.jpg
 category: photography
 format: carousel
 mediaList:
+  - media: /assets/n9.jpg
+    title: '14'
   - media: /assets/n3.jpg
     title: '12'
   - media: /assets/n1.jpg
