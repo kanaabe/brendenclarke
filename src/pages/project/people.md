@@ -14,6 +14,8 @@ mediaList:
     title: '13'
   - media: /assets/n10.jpg
     title: '16'
+  - media: /assets/n13.jpg
+    title: '21'
   - media: /assets/people5.jpg
     title: '4'
   - media: /assets/costaques.jpg
