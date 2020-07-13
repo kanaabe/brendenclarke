@@ -54,8 +54,6 @@ mediaList:
     title: '24'
   - media: /assets/mass2-9.jpg
     title: '25'
-  - media: /assets/n1.jpg
-    title: '27'
 templateKey: project
 ---
 
