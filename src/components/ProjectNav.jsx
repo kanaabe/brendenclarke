@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link, StaticQuery, graphql } from "gatsby"
 
-const ProjectNav = ({ category, location, width }) => (
+const ProjectNav = ({ location, width }) => (
   <StaticQuery
     query={graphql`
       {
@@ -83,6 +83,7 @@ const NavLink = styled(Link)`
 
   @media only screen and (max-width: 500px) {
     font-size: 12px;
+    text-align: center;
   }
 `
 
