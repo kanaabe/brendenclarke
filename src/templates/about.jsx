@@ -15,11 +15,11 @@ export default ({ data, location }) => {
         <Container>
           <Image image={image} />
           <TextContainer>
-            <Text mono size="12px">
+            <Text size="16px" lineHeight="20px">
               <MarkdownContent content={mainCopy} />
             </Text>
             <Spacer />
-            <Text mono size="12px">
+            <Text size="16px" lineHeight="20px">
               <MarkdownContent content={subCopy} />
             </Text>
           </TextContainer>

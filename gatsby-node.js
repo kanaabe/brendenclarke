@@ -11,7 +11,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       getNode,
       basePath:
         node.frontmatter.title === "filmOrder" ||
-        node.frontmatter.title === "photographyOrder"
+          node.frontmatter.title === "photographyOrder"
           ? "utils"
           : "pages"
     })
@@ -24,7 +24,14 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 }
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage, createRedirect } = actions
+
+  createRedirect({
+    fromPath: '/',
+    toPath: '/project/overview',
+    isPermanent: true,
+    redirectInBrowser: true,
+  })
 
   return new Promise((resolve, reject) => {
     graphql(`
@@ -56,18 +63,6 @@ exports.createPages = ({ graphql, actions }) => {
           }
         })
       })
-
-      // // Create the /work page
-      // const firstWork = result.data.allMarkdownRemark.edges.filter(
-      //   page => page.node.frontmatter.templateKey === "work"
-      // )[0]
-      // if (firstWork) {
-      //   createPage({
-      //     path: "work",
-      //     component: path.resolve("./src/templates/work.jsx"),
-      //     context: { slug: firstWork.node.fields.slug }
-      //   })
-      // }
 
       resolve()
     })

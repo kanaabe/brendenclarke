@@ -18,7 +18,6 @@ const ProjectNav = ({ category, location, width }) => (
               }
               frontmatter {
                 title
-                category
               }
             }
           }
@@ -28,7 +27,6 @@ const ProjectNav = ({ category, location, width }) => (
     render={(data) => (
       <StyledNav width={width}>
         {data.allMarkdownRemark.edges.map((project) => {
-          if (project.node.frontmatter.category !== category) return ""
           const href = `${project.node.fields.slug}`
 
           return (
@@ -70,7 +68,7 @@ const StyledNav = styled.div`
 `
 
 const NavLink = styled(Link)`
-  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  font-family: DM Sans, Helvetica, sans-serif, sans-serif;
   color: ${(props) => (props.isActive ? "rgb(140, 140, 190)" : "black")};
   font-style: ${(props) => (props.isActive ? "italic" : "none")};
   text-decoration: none;

@@ -3,7 +3,7 @@ module.exports = {
     title: "Brenden Clarke",
     description: "Brenden Clarke",
     authorName: "Brenden Clarke",
-    url: "https://example.com"
+    url: "https://brendenclarke.com"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

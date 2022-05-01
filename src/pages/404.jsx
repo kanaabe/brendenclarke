@@ -6,8 +6,7 @@ const NotFound = () => {
   return (
     <LayoutWrapper>
       <Body>
-        <h1>Sorry! The page you are looking for does not exist.</h1>
-        <h2>Please go back and try something else.</h2>
+        404 Not Found
       </Body>
     </LayoutWrapper>
   )

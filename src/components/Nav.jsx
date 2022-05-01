@@ -18,20 +18,6 @@ const Nav = ({ location }) => (
         <NavLink to="/" isActive={location.pathname === "/"}>
           {data.site.siteMetadata.authorName}
         </NavLink>
-        <NavLink
-          to="/project/overview"
-          isActive={location.pathname.indexOf("project") > -1}
-          isSubLink
-        >
-          Photography
-        </NavLink>
-        <NavLink
-          to="/film"
-          isActive={location.pathname.indexOf("film") > -1}
-          isSubLink
-        >
-          Film
-        </NavLink>
         <NavLink to="/about" isActive={location.pathname === "about"} isSubLink>
           About
         </NavLink>
@@ -44,6 +30,7 @@ const StyledNav = styled.div`
   display: flex;
   position: fixed;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   top: 0;
   background-color: transparent;
@@ -55,7 +42,7 @@ const StyledNav = styled.div`
 `
 
 const NavLink = styled(Link)`
-  font-family: Arial, sans-serif;
+  font-family: DM Sans, sans-serif;
   color: black;
   font-style: ${(props) =>
     props.isActive && props.isSubLink ? "italic" : "none"};
@@ -63,7 +50,7 @@ const NavLink = styled(Link)`
   font-size: ${(props) => (props.isSubLink ? "16px" : "20px")};
   letter-spacing: 3px;
   padding: 15px;
-  font-weight: ${(props) => (props.isSubLink ? 300 : 600)};
+  font-weight: ${(props) => (props.isSubLink ? 300 : 800)};
   margin: 0;
   cursor: pointer;
   &:hover {

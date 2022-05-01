@@ -28,10 +28,9 @@ const LayoutWrapper = ({ children }) => (
             href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
             type="text/css"
           />
-          <link
-            href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap"
-            rel="stylesheet"
-          />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
           <meta
             name="description"
             content={data.site.siteMetadata.description}

@@ -9,22 +9,6 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: src/pages/index.md
-        label: Home
-        name: index
-        fields:
-          - { name: slug, label: Slug }
-          - { name: title, label: Title }
-          - { name: image, label: Image, widget: image, required: false }
-          - { name: video, label: Video Link, required: false }
-          - {
-              label: Template Key,
-              name: templateKey,
-              widget: hidden,
-              default: index,
-            }
-        editor:
-          preview: false
       - file: src/pages/about/index.md
         label: About
         name: about
@@ -62,14 +46,6 @@ collections:
     fields:
       - { name: title, label: Title }
       - { name: thumbnailImage, label: Thumbnail Image, widget: image }
-      - name: category
-        widget: select
-        label: Category
-        options: ["photography", "film"]
-      - name: format
-        widget: select
-        label: Format
-        options: ["grid", "carousel"]
       - name: mediaList
         label: "Media List"
         widget: list
@@ -94,22 +70,6 @@ collections:
         fields:
           - { name: title, label: Title }
           - label: Projects List
-            name: projects
-            widget: list
-            fields:
-              - label: Project
-                name: project
-                widget: relation
-                collection: project
-                searchFields: [title]
-                valueField: title
-                displayFields: [title]
-      - name: filmOrder
-        label: Film Order
-        file: src/utils/filmOrder.md
-        fields:
-          - { name: title, label: Title }
-          - label: Projects
             name: projects
             widget: list
             fields:
