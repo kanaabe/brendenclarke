@@ -32,6 +32,7 @@ export default ({ data, location }) => {
             <Box className="grid-item" width="49%" key={media.title}>
               <GridImg alt={media.title} src={media.media} />
             </Box>
+
           ))}
         </Masonry>
       </Body>
