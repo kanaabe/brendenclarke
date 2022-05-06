@@ -61,6 +61,7 @@ const ProjectNav = ({
                 height={16}
                 onClick={handleGridIconClick}
                 style={{ cursor: "pointer" }}
+                alt="Grid View"
               />
               <Text size="12px" style={{ padding: "0 10px" }}>
                 {carouselIndex + 1} / {numberOfImages}
@@ -73,6 +74,7 @@ const ProjectNav = ({
               height={16}
               onClick={handleCarouselIconClick}
               style={{ cursor: "pointer" }}
+              alt="Carousel View"
             />
           )}
         </Box>
