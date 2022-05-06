@@ -61,16 +61,11 @@ export default ({ data, location }) => {
           handleCarouselIconClick={handleCarouselIconClick}
         />
         {carouselView ? (
-          <Box
-            marginTop={100}
-            width="calc(100vw - 175px)"
-            height="calc(100vh - 100px)"
-            style={{ position: "relative", marginBottom: "24px" }}
-          >
+          <CarouselWrapper>
             <CarouselImage src={mediaList[carouselIndex].media} />
             <LeftNavigation onClick={handleLeftClick} />
             <RightNavigation onClick={handleRightClick} />
-          </Box>
+          </CarouselWrapper>
         ) : (
           <Masonry
             style={{
@@ -147,4 +142,16 @@ const RightNavigation = styled(LeftNavigation)`
   right: 0;
   left: unset;
   cursor: e-resize;
+`;
+
+const CarouselWrapper = styled.div`
+  margin-top: 100px;
+  width: calc(100vw-175px);
+  height: calc(100vh - 100px);
+  position: relative;
+  margin-bottom: 24px;
+
+  @media only screen and (max-width: 500px) {
+    width: calc(100vw);
+  }
 `;
