@@ -11,7 +11,7 @@ const Text = styled.div`
   font-family: Raleway, sans-serif;
   font-weight: 400;
   font-size: ${(props) => props.size || "24px"};
-  line-height: ${(props) => props.lineHeight || "24px"};
+  line-height: ${(props) => props.lineHeight || "22px"};
 `;
 
 export { Body, Text };
