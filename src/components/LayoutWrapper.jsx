@@ -1,8 +1,8 @@
-import React from "react"
-import Helmet from "react-helmet"
-import { StaticQuery, graphql } from "gatsby"
-import { createGlobalStyle } from "styled-components"
-import "normalize.css"
+import React from "react";
+import Helmet from "react-helmet";
+import { StaticQuery, graphql } from "gatsby";
+import { createGlobalStyle } from "styled-components";
+import "normalize.css";
 
 const LayoutWrapper = ({ children }) => (
   <StaticQuery
@@ -16,7 +16,7 @@ const LayoutWrapper = ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <React.Fragment>
         <Helmet>
           <html lang="en" />
@@ -30,7 +30,10 @@ const LayoutWrapper = ({ children }) => (
           />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-          <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap"
+            rel="stylesheet"
+          />
           <meta
             name="description"
             content={data.site.siteMetadata.description}
@@ -44,7 +47,7 @@ const LayoutWrapper = ({ children }) => (
       </React.Fragment>
     )}
   />
-)
+);
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -55,6 +58,6 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     overflow: hidden;
   }
-`
+`;
 
-export { LayoutWrapper }
+export { LayoutWrapper };

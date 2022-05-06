@@ -1,13 +1,13 @@
-import React from "react"
-import { graphql } from "gatsby"
-import styled from "styled-components"
-import { Nav } from "../components/Nav"
-import { Body, Text } from "../components/LayoutPrimitives"
-import { LayoutWrapper } from "../components/LayoutWrapper"
-import { MarkdownContent } from "../components/MarkdownContent"
+import React from "react";
+import { graphql } from "gatsby";
+import styled from "styled-components";
+import { Nav } from "../components/Nav";
+import { Body, Text } from "../components/LayoutPrimitives";
+import { LayoutWrapper } from "../components/LayoutWrapper";
+import { MarkdownContent } from "../components/MarkdownContent";
 
 export default ({ data, location }) => {
-  const { image, mainCopy, subCopy } = data.markdownRemark.frontmatter
+  const { image, mainCopy, subCopy } = data.markdownRemark.frontmatter;
   return (
     <LayoutWrapper>
       <Body>
@@ -15,22 +15,22 @@ export default ({ data, location }) => {
         <Container>
           <Image image={image} />
           <TextContainer>
-            <Text size="16px" lineHeight="20px">
+            <Text size="16px" lineHeight="24px">
               <MarkdownContent content={mainCopy} />
             </Text>
             <Spacer />
-            <Text size="16px" lineHeight="20px">
+            <Text size="16px" lineHeight="24px">
               <MarkdownContent content={subCopy} />
             </Text>
           </TextContainer>
         </Container>
       </Body>
     </LayoutWrapper>
-  )
-}
+  );
+};
 
 export const query = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
@@ -41,11 +41,11 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
 const Spacer = styled.div`
   height: 40px;
-`
+`;
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -57,7 +57,7 @@ const TextContainer = styled.div`
   @media only screen and (max-width: 500px) {
     width: 100%;
   }
-`
+`;
 
 const Container = styled.div`
   display: flex;
@@ -69,12 +69,12 @@ const Container = styled.div`
     display: block;
     padding-top: 93px;
   }
-`
+`;
 
 const Image = styled.div`
   width: 50%;
   height: 100%;
-  background-image: url(${props => props.image});
+  background-image: url(${(props) => props.image});
   background-size: cover;
   background-position: center;
 
@@ -82,4 +82,4 @@ const Image = styled.div`
     width: 100%;
     margin-bottom: 50px;
   }
-`
+`;

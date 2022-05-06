@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const ProjectViewport = styled.div`
   display: inline-grid;
@@ -9,7 +9,7 @@ export const ProjectViewport = styled.div`
   @media only screen and (max-width: 500px) {
     margin-top: 64px;
   }
-`
+`;
 
 export const ProjectTrack = styled.div`
   display: flex;
@@ -23,7 +23,7 @@ export const ProjectTrack = styled.div`
     flex-direction: column;
     margin: auto;
   }
-`
+`;
 
 export const ImageContainer = styled.div`
   display: inline-block;
@@ -38,4 +38,4 @@ export const ImageContainer = styled.div`
     width: 100vw;
     height: auto;
   }
-`
+`;

@@ -1,8 +1,20 @@
-import React from "react"
-import styled from "styled-components"
-import { Link, StaticQuery, graphql } from "gatsby"
+import React from "react";
+import styled from "styled-components";
+import { Link, StaticQuery, graphql } from "gatsby";
+import iconGrid from "../assets/icon-grid.svg";
+import iconCarousel from "../assets/icon-carousel.svg";
+import { Text } from "./LayoutPrimitives";
+import { Box } from "rebass";
 
-const ProjectNav = ({ location, width }) => (
+const ProjectNav = ({
+  location,
+  width,
+  carouselView,
+  carouselIndex,
+  numberOfImages,
+  handleCarouselIconClick,
+  handleGridIconClick,
+}) => (
   <StaticQuery
     query={graphql`
       {
@@ -27,7 +39,7 @@ const ProjectNav = ({ location, width }) => (
     render={(data) => (
       <StyledNav width={width}>
         {data.allMarkdownRemark.edges.map((project) => {
-          const href = `${project.node.fields.slug}`
+          const href = `${project.node.fields.slug}`;
 
           return (
             <NavLink
@@ -37,12 +49,37 @@ const ProjectNav = ({ location, width }) => (
             >
               {project.node.frontmatter.title}
             </NavLink>
-          )
+          );
         })}
+
+        <Box padding="5px 30px">
+          {carouselView ? (
+            <Box display="flex" alignItems="center">
+              <img
+                src={iconGrid}
+                width={16}
+                height={16}
+                onClick={handleGridIconClick}
+                style={{ cursor: "pointer" }}
+              />
+              <Text size="12px" style={{ padding: "0 10px" }}>
+                {carouselIndex + 1} / {numberOfImages}
+              </Text>
+            </Box>
+          ) : (
+            <img
+              src={iconCarousel}
+              width={16}
+              height={16}
+              onClick={handleCarouselIconClick}
+              style={{ cursor: "pointer" }}
+            />
+          )}
+        </Box>
       </StyledNav>
     )}
   />
-)
+);
 
 const StyledNav = styled.div`
   display: flex;
@@ -65,26 +102,22 @@ const StyledNav = styled.div`
     flex-direction: row;
     align-items: center;
   }
-`
+`;
 
 const NavLink = styled(Link)`
-  font-family: DM Sans, Helvetica, sans-serif, sans-serif;
-  color: ${(props) => (props.isActive ? "rgb(140, 140, 190)" : "black")};
-  font-style: ${(props) => (props.isActive ? "italic" : "none")};
+  font-family: Raleway, sans-serif;
+  color: black;
+  font-style: none;
+  font-weight: ${(props) => (props.isActive ? 400 : 600)};
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px;
   padding: 5px 30px;
-  width: 220px;
-
-  &:hover {
-    color: rgb(140, 140, 190);
-    font-style: italic;
-  }
+  width: 175px;
 
   @media only screen and (max-width: 500px) {
     font-size: 12px;
     text-align: center;
   }
-`
+`;
 
-export { ProjectNav }
+export { ProjectNav };

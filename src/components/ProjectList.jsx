@@ -1,25 +1,25 @@
-import React from "react"
-import styled from "styled-components"
-import { Text } from "./LayoutPrimitives"
+import React from "react";
+import styled from "styled-components";
+import { Text } from "./LayoutPrimitives";
 
 const ProjectList = ({ projects }) => {
   return (
     <Body>
-      {projects.map(project => {
-        if (!project) return ""
+      {projects.map((project) => {
+        if (!project) return "";
         return (
           <ProjectBlock href={`${project.node.fields.slug}`}>
             <Text size="12px" mono>
               {project.node.frontmatter.title}
             </Text>
           </ProjectBlock>
-        )
+        );
       })}
     </Body>
-  )
-}
+  );
+};
 
-export { ProjectList }
+export { ProjectList };
 
 const Body = styled.div`
   display: flex;
@@ -32,7 +32,7 @@ const Body = styled.div`
     margin: 120px auto 0 auto;
     overflow: scroll;
   }
-`
+`;
 
 const ProjectBlock = styled.a`
   width: 100%;
@@ -48,4 +48,4 @@ const ProjectBlock = styled.a`
   @media only screen and (max-width: 500px) {
     margin: 5px;
   }
-`
+`;

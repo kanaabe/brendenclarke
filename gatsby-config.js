@@ -3,7 +3,7 @@ module.exports = {
     title: "Brenden Clarke",
     description: "Brenden Clarke",
     authorName: "Brenden Clarke",
-    url: "https://brendenclarke.com"
+    url: "https://brendenclarke.com",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -12,10 +12,10 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `src`,
-        path: `${__dirname}/src/`
-      }
+        path: `${__dirname}/src/`,
+      },
     },
     `gatsby-transformer-remark`,
-    `gatsby-plugin-netlify-cms`
-  ]
-}
+    `gatsby-plugin-netlify-cms`,
+  ],
+};

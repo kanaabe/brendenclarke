@@ -40,4 +40,3 @@ subCopy: |-
   Website by [@kana.biz](https://www.instagram.com/kana.biz)
 templateKey: about
 ---
-
