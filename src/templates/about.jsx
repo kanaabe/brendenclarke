@@ -63,7 +63,7 @@ const Container = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
-  padding-top: 53px;
+  padding-top: 100px;
 
   @media only screen and (max-width: 500px) {
     display: block;
@@ -72,11 +72,12 @@ const Container = styled.div`
 `;
 
 const Image = styled.div`
-  width: 50%;
+  width: 40%;
   height: 100%;
   background-image: url(${(props) => props.image});
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
 
   @media only screen and (max-width: 500px) {
     width: 100%;

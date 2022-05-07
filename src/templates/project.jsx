@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { graphql } from "gatsby";
 import styled from "styled-components";
+import LazyLoad from "react-lazyload";
 import { Nav } from "../components/Nav";
 import { Body } from "../components/LayoutPrimitives";
 import { LayoutWrapper } from "../components/LayoutWrapper";
@@ -12,6 +13,8 @@ export default ({ data, location }) => {
   const { mediaList } = data.markdownRemark.frontmatter;
   const [carouselView, setCarouselView] = useState(true);
   const [carouselIndex, setCarouselIndex] = useState(0);
+
+  const masonryRef = useRef();
 
   const handleLeftClick = () => {
     if (carouselIndex === 0) {
@@ -48,7 +51,7 @@ export default ({ data, location }) => {
 
   return (
     <LayoutWrapper>
-      <Body>
+      <Body className="body-scroll">
         <Nav location={location} />
         <ProjectNav
           width="175px"
@@ -77,24 +80,53 @@ export default ({ data, location }) => {
               percentPosition: true,
               columnWidth: ".grid-item",
               gutter: 5,
+              updateOnEachImageLoad: true,
             }}
+            ref={masonryRef}
           >
+            {/* <MasonryDiv> */}
             {mediaList.map((media, i) => {
-              console.log(i);
-              console.log(media);
               return (
-                <Box className="grid-item" width="49%" key={media.title}>
-                  {/* <LazyLoad height={200}> */}
-                  <GridImg
-                    alt={media.title}
-                    src={media.media}
-                    onClick={handleGridImageClick}
-                    data-index={i}
-                  />
-                  {/* </LazyLoad> */}
-                </Box>
+                <GridBox className="grid-item" width="31%" key={media.title}>
+                  {i < 5 ? (
+                    <GridImg
+                      alt={media.title}
+                      src={media.media}
+                      onClick={handleGridImageClick}
+                      data-index={i}
+                      onLoad={() => {
+                        if (masonryRef.current && masonryRef.current.masonry) {
+                          masonryRef.current.masonry.layout();
+                        }
+                      }}
+                    />
+                  ) : (
+                    <LazyLoad
+                      scrollContainer={".body-scroll"}
+                      overflow
+                      placeholder={<Box height="300px"></Box>}
+                      once
+                    >
+                      <GridImg
+                        alt={media.title}
+                        src={media.media}
+                        onClick={handleGridImageClick}
+                        data-index={i}
+                        onLoad={() => {
+                          if (
+                            masonryRef.current &&
+                            masonryRef.current.masonry
+                          ) {
+                            masonryRef.current.masonry.layout();
+                          }
+                        }}
+                      />
+                    </LazyLoad>
+                  )}
+                </GridBox>
               );
             })}
+            {/* </MasonryDiv> */}
           </Masonry>
         )}
       </Body>
@@ -120,6 +152,7 @@ export const query = graphql`
 const GridImg = styled.img`
   width: 100%;
   height: auto;
+  cursor: pointer;
 `;
 
 const CarouselImage = styled.img`
@@ -146,7 +179,7 @@ const RightNavigation = styled(LeftNavigation)`
 
 const CarouselWrapper = styled.div`
   margin-top: 100px;
-  width: calc(100vw-175px);
+  width: calc(100vw - 175px);
   height: calc(100vh - 100px);
   position: relative;
   margin-bottom: 24px;
@@ -154,5 +187,13 @@ const CarouselWrapper = styled.div`
   @media only screen and (max-width: 500px) {
     width: calc(100vw);
     margin-top: auto;
+  }
+`;
+
+const GridBox = styled.div`
+  width: 31%;
+
+  @media only screen and (max-width: 500px) {
+    width: 49%;
   }
 `;
