@@ -15,11 +15,11 @@ export default ({ data, location }) => {
         <Container>
           <Image image={image} />
           <TextContainer>
-            <Text size="16px" lineHeight="24px">
+            <Text size="16px">
               <MarkdownContent content={mainCopy} />
             </Text>
             <Spacer />
-            <Text size="16px" lineHeight="24px">
+            <Text size="16px">
               <MarkdownContent content={subCopy} />
             </Text>
           </TextContainer>
@@ -51,11 +51,11 @@ const TextContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  width: 50%;
+  width: 60%;
   padding: 20px;
 
   @media only screen and (max-width: 500px) {
-    width: 100%;
+    padding: 10px;
   }
 `;
 
@@ -66,8 +66,13 @@ const Container = styled.div`
   padding-top: 100px;
 
   @media only screen and (max-width: 500px) {
-    display: block;
+    /* display: block; */
     padding-top: 93px;
+    ${Text} {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    /* flex-direction: column-reverse; */
   }
 `;
 
@@ -80,7 +85,6 @@ const Image = styled.div`
   background-repeat: no-repeat;
 
   @media only screen and (max-width: 500px) {
-    width: 100%;
     margin-bottom: 50px;
   }
 `;

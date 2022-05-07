@@ -187,6 +187,8 @@ const CarouselWrapper = styled.div`
   @media only screen and (max-width: 500px) {
     width: calc(100vw);
     margin-top: auto;
+    height: calc(100vh - 122px);
+    margin-bottom: 64px;
   }
 `;
 

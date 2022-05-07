@@ -36,7 +36,5 @@ mainCopy: >-
   2019 Silver Telly Award for Best Social Video
 subCopy: |-
   EMAIL: brendentclarke@gmail.com
-
-  Website by [@kana.biz](https://www.instagram.com/kana.biz)
 templateKey: about
 ---
