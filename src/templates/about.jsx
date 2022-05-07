@@ -53,9 +53,12 @@ const TextContainer = styled.div`
   height: 100%;
   width: 60%;
   padding: 20px;
+  position: relative;
 
   @media only screen and (max-width: 500px) {
     padding: 10px;
+    justify-content: start;
+    width: 100%;
   }
 `;
 
@@ -68,6 +71,7 @@ const Container = styled.div`
   @media only screen and (max-width: 500px) {
     /* display: block; */
     padding-top: 93px;
+    flex-direction: column;
     ${Text} {
       font-size: 14px;
       line-height: 18px;
@@ -85,6 +89,7 @@ const Image = styled.div`
   background-repeat: no-repeat;
 
   @media only screen and (max-width: 500px) {
-    margin-bottom: 50px;
+    min-height: 350px;
+    width: 100%;
   }
 `;
