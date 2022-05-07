@@ -160,6 +160,9 @@ const CarouselImage = styled.img`
   width: 100%;
   height: calc(100vh - 124px);
   user-select: none;
+  @media only screen and (max-width: 500px) {
+    height: calc(100vh - 164px);
+  }
 `;
 
 const LeftNavigation = styled.div`
@@ -169,6 +172,9 @@ const LeftNavigation = styled.div`
   width: calc((100vw - 175px) / 2);
   height: 100%;
   cursor: w-resize;
+  @media only screen and (max-width: 500px) {
+    width: calc(100vw / 2);
+  }
 `;
 
 const RightNavigation = styled(LeftNavigation)`
