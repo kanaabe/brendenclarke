@@ -46,6 +46,12 @@ mediaList:
     title: '21'
   - media: /assets/bc_site-62.jpg
     title: '22'
+  - media: /assets/bc-site-n.jpg
+    title: '23'
+  - media: /assets/bc_site-33.jpg
+    title: '24'
+  - media: /assets/bc_site-55.jpg
+    title: '25'
 templateKey: project
 ---
 
