@@ -8,8 +8,8 @@ mainCopy: >-
   accolades for both his commercial and editorial work. He has published two
   books, Above The Midnight Half (2019) and We Appreciate Your Interest, However
   (2021). He is the founder of the running label Forrest as well as the founder
-  of the the production company 315. He also serves as the Head of Photo & Video
-  at Gap Inc.
+  of the production company 315. He also serves as the Head of Photo & Video at
+  Gap Inc.
 
 
   Selected Commercial Clients include On Running, Nike, Saturdays NYC, Leica,
