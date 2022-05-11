@@ -50,7 +50,7 @@ mediaList:
     title: '23'
   - media: /assets/bc_site-33.jpg
     title: '24'
-  - media: /assets/bc_site-55.jpg
+  - media: /assets/bc_site-35.jpg
     title: '25'
 templateKey: project
 ---
