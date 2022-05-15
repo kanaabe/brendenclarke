@@ -8,8 +8,6 @@ mediaList:
     title: '2'
   - media: /assets/bc_site-50.jpg
     title: '3'
-  - media: /assets/bc_site-64.jpg
-    title: '26'
   - media: /assets/bc_site-49.jpg
     title: '4'
   - media: /assets/bc_site-53.jpg
@@ -26,6 +24,8 @@ mediaList:
     title: '10'
   - media: /assets/bc_site-51.jpg
     title: '11'
+  - media: /assets/bc_site-64.jpg
+    title: '26'
   - media: /assets/bc_site-46.jpg
     title: '12'
   - media: /assets/bc_site-44.jpg
