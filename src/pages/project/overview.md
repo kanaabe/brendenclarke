@@ -8,6 +8,8 @@ mediaList:
     title: '2'
   - media: /assets/bc_site-50.jpg
     title: '3'
+  - media: /assets/bc_site-64.jpg
+    title: '26'
   - media: /assets/bc_site-49.jpg
     title: '4'
   - media: /assets/bc_site-53.jpg
@@ -52,6 +54,8 @@ mediaList:
     title: '24'
   - media: /assets/bc_site-35.jpg
     title: '25'
+  - media: /assets/bc_site-63.jpg
+    title: '27'
 templateKey: project
 ---
 
